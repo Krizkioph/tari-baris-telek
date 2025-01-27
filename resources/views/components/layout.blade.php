@@ -17,20 +17,35 @@
         <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-20">
     </div>
 
-    <nav class="text-white bg-black ">
-        <ul class="flex justify-center py-4 space-x-8 text-xl">
-            <li><a href="/" class="hover:text-gray-400">Beranda</a></li>
-            <li><a href="/sejarah" class="hover:text-gray-400">Sejarah</a></li>
-            <li><a href="/" class="hover:text-gray-400">Busana</a></li>
-            <li><a href="/" class="hover:text-gray-400">Gerakan</a></li>
-            <li><a href="/" class="hover:text-gray-400">Galeri</a></li>
-            <li><a href="/" class="hover:text-gray-400">Tentang</a></li>
-            <li><a href="/" class="hover:text-gray-400">Lokasi</a></li>
-        </ul>
+    <nav class="text-white border-b-2 border-abu">
+        <div class="flex items-center justify-between py-4">
+            <!-- Navigasi Tengah -->
+            <div class="flex justify-center flex-1">
+                <ul class="flex justify-center space-x-8 text-m">
+                    <li><a href="/" class="hover:text-gray-400">Beranda</a></li>
+                    <li><a href="/sejarah" class="hover:text-gray-400">Sejarah</a></li>
+                    <li><a href="/" class="hover:text-gray-400">Busana</a></li>
+                    <li><a href="/" class="hover:text-gray-400">Gerakan</a></li>
+                    <li><a href="/" class="hover:text-gray-400">Galeri</a></li>
+                    <li><a href="/" class="hover:text-gray-400">Tentang</a></li>
+                    <li><a href="/" class="hover:text-gray-400">Lokasi</a></li>
+                </ul>
+            </div>
+    
+            <!-- Tombol Log Out -->
+            @auth    
+            <form method="POST" action="/logout" class="mr-4">
+                @csrf
+                @method('DELETE')
+                <button class="text-m hover:text-gray-400">Log Out</button>
+            </form>
+            @endauth
+        </div>
     </nav>
+    
 
 
-    <main>
+    <main class="mt-20 max-w-[986px] mx-auto">
         {{ $slot }}
     </main>
 </body>

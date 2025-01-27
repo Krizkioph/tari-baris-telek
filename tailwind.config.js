@@ -13,7 +13,11 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                gronten: ["Gronten", "sans-serif"],
+                "hanken-grotest": ["Hanken Grotesk", "sans-serif"],
+            },
+            colors: {
+                black: "#060606",
+                abu: "#4D4B4B",
             },
         },
     },
