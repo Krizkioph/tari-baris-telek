@@ -14,7 +14,7 @@
 
      <!-- Header Image -->
     <div>
-        <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-24">
+        <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-20">
     </div>
 
     <nav class="text-white border-b-2 border-abu">
@@ -22,24 +22,24 @@
             <!-- Navigasi Tengah -->
             <div class="flex justify-center flex-1">
                 <ul class="flex justify-center space-x-8 text-m">
-                    <li><a href="/" class="hover:text-gray-400">Beranda</a></li>
-                    <li><a href="/sejarah" class="hover:text-gray-400">Sejarah</a></li>
-                    <li><a href="/" class="hover:text-gray-400">Busana</a></li>
-                    <li><a href="/" class="hover:text-gray-400">Gerakan</a></li>
-                    <li><a href="/" class="hover:text-gray-400">Galeri</a></li>
-                    <li><a href="/" class="hover:text-gray-400">Tentang</a></li>
-                    <li><a href="/" class="hover:text-gray-400">Lokasi</a></li>
+                    <li><a href="/" class="hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
+                    <li><a href="/sejarah" class="hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
+                    <li><a href="/busana" class="hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>
+                    <li><a href="/" class="hover:hover:text-emas">Gerakan</a></li>
+                    <li><a href="/" class="hover:hover:text-emas">Galeri</a></li>
+                    <li><a href="/" class="hover:hover:text-emas">Tentang</a></li>
+                    <li><a href="/" class="hover:hover:text-emas">Lokasi</a></li>
                 </ul>
             </div>
     
             <!-- Tombol Log Out -->
-            @auth    
+            {{-- @auth    
             <form method="POST" action="/logout" class="mr-4">
                 @csrf
                 @method('DELETE')
                 <button class="text-m hover:text-gray-400">Log Out</button>
             </form>
-            @endauth
+            @endauth --}}
         </div>
     </nav>
     

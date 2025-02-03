@@ -18,6 +18,7 @@ export default {
             colors: {
                 black: "#060606",
                 abu: "#4D4B4B",
+                emas: "#F1C40F",
             },
         },
     },
