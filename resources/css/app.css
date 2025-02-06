@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for dropdown */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.dropdown-content.open {
+    max-height: 200px; /* Adjust based on your content */
+    opacity: 1;
+}
+
+.toggle-dropdown::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.toggle-dropdown.open::after {
+    transform: rotate(180deg);
+}
