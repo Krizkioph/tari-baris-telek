@@ -14,7 +14,7 @@
 </head>
 <body class="text-white bg-black font-hanken-grotest">
 
-    <div class="flex">
+    <div class="flex flex-row ">
 
          <!-- Sidebar -->
          <aside class="flex flex-col w-64 h-screen bg-gray-600">
@@ -55,7 +55,7 @@
                         </button>
                         <div id="galeri-dropdown" class="mt-2 ml-2 space-y-2 dropdown-content">
                             <a href="/dashboard/create_galeri" class="{{ request()->routeIs('create_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded  hover:bg-gray-500 hover:text-emas">Tambah Foto</a>
-                            <a href="/dashboard/view_galeri" class=" {{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Foto</a>
+                            <a href="/dashboard/view_galeri" class=" {{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Galeri</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             </nav>
         </aside>
 
-        <main class="mt-20 max-w-[986px] mx-16">
+        <main class="flex-1 mt-20 max-w-[986px] mx-16 min-w-0 overflow-auto">
             {{ $slot }}
         </main>
     </div>

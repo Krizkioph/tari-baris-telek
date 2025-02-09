@@ -69,27 +69,9 @@
         <div class="flex flex-col items-center">
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Gambar-gambar -->
-                <img 
-                    src="https://picsum.photos/300/300?random=1" 
-                    alt="Dummy 1" 
-                    class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-sm hover:shadow-emas">
-                <img 
-                    src="https://picsum.photos/300/300?random=2" 
-                    alt="Dummy 2" 
-                    class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
-                <img 
-                    src="https://picsum.photos/300/300?random=3" 
-                    alt="Dummy 3" 
-                    class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
-                <img 
-                    src="https://picsum.photos/300/300?random=4" 
-                    alt="Dummy 4" 
-                    class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
-                <img 
-                    src="https://picsum.photos/300/300?random=5" 
-                    alt="Dummy 5" 
-                    class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
-                
+                @foreach ($galeri as $data)
+                    <img src="{{asset('galeri/' . $data->foto)}}" alt="{{$data->deskripsi}}" width="300" height="300" class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
+                @endforeach
             </div>
     
 

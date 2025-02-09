@@ -17,6 +17,7 @@ Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard/create_informasi', [AdminController::class, 'create_informasi'])->name('create_informasi');
     Route::get('/dashboard/view_galeri', [AdminController::class, 'view_galeri'])->name('view_galeri');
     Route::get('/dashboard/create_galeri', [AdminController::class, 'create_galeri'])->name('create_galeri');
+    Route::post('/dashboard/store_galeri', [AdminController::class, 'store_galeri'])->name('store_galeri');
 });
 
 Route::get('/login', [SessionController::class, 'create'])->name('login');
