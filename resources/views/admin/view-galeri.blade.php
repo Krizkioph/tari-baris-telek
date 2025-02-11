@@ -1,5 +1,5 @@
 <x-admin-layout>
-    <div class="px-6 py-4">
+    <div class="px-2">
         <div class="overflow-x-auto rounded-lg shadow-lg bg-white/5">
             <table class="w-full text-left border-collapse">
                 <thead>
@@ -12,22 +12,22 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-700 ">
-                    @foreach ($data as $item)
+                    @foreach ($galeri as $data)
                         <tr class="transition hover:bg-gray-800">
                             <td class="px-6 py-4">{{ $loop->iteration }}</td>
-                            <td class="px-6 py-4">{{ $item->deskripsi }}</td>
+                            <td class="px-6 py-4">{{ $data->deskripsi }}</td>
                             <td class="px-6 py-4">
-                                <img src="{{ asset('galeri/' . $item->foto) }}" 
-                                     alt="{{ $item->deskripsi }}" 
+                                <img src="{{ asset('galeri/' . $data->foto) }}" 
+                                     alt="{{ $data->deskripsi }}" 
                                      class="object-cover w-24 h-24 border border-gray-700 rounded-lg shadow-md">
                             </td>
-                            <td class="px-6 py-4">{{ $item->user->name }}</td>
+                            <td class="px-6 py-4">{{ $data->user->name }}</td>
                             <td class="flex gap-2 px-6 py-4">
-                                <a href="#" class="px-3 py-1 text-sm font-medium text-white transition bg-blue-500 rounded-lg hover:bg-blue-700">Edit</a>
-                                <form action="#" method="POST" onsubmit="return confirm('Yakin ingin menghapus?')">
+                                <a href="/dashboard/edit_galeri/{{$data->id}}" class="px-5 py-3 text-sm font-medium text-white transition bg-blue-500 rounded-lg hover:bg-blue-700">Edit</a>
+                                <form action="/dashboard/delete_galeri/{{$data->id}}" method="POST" onsubmit="return confirm('Yakin ingin menghapus?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="px-3 py-1 text-sm font-medium text-white transition bg-red-500 rounded-lg hover:bg-red-700">Hapus</button>
+                                    <button type="submit" class="px-5 py-3 text-sm font-medium text-white transition bg-red-500 rounded-lg hover:bg-red-700">Hapus</button>
                                 </form>
                             </td>
                         </tr>

@@ -18,6 +18,9 @@ Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard/view_galeri', [AdminController::class, 'view_galeri'])->name('view_galeri');
     Route::get('/dashboard/create_galeri', [AdminController::class, 'create_galeri'])->name('create_galeri');
     Route::post('/dashboard/store_galeri', [AdminController::class, 'store_galeri'])->name('store_galeri');
+    Route::get('/dashboard/edit_galeri/{id}', [AdminController::class, 'edit_galeri'])->name('edit_galeri');
+    Route::patch('/dashboard/update_galeri/{id}', [AdminController::class, 'update_galeri'])->name('update_galeri');
+    Route::delete('/dashboard/delete_galeri/{id}', [AdminController::class, 'delete_galeri'])->name('delete_galeri');
 });
 
 Route::get('/login', [SessionController::class, 'create'])->name('login');

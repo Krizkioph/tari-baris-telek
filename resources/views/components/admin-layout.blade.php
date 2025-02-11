@@ -27,6 +27,7 @@
                     @endauth
                 </div>
 
+                <!-- Log Out Button -->
                 <div class="mt-3 ">
                     @auth    
                         <form method="POST" action="/logout" class="w-full">
@@ -39,6 +40,13 @@
             </div>
             <nav class="flex flex-col flex-grow p-4 space-y-2">
                 <div class="space-y-2">
+
+                    <div class="relative mb-4">
+                        <a href="/" class="block w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">
+                            Home
+                        </a>                        
+                    </div>
+                    
                     <div class="relative">
                         <button class="w-full p-2 text-left transition bg-gray-500 rounded hover:bg-gray-400 toggle-dropdown " data-target="info-dropdown">
                             Informasi
@@ -58,9 +66,11 @@
                             <a href="/dashboard/view_galeri" class=" {{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Galeri</a>
                         </div>
                     </div>
+
+                   
                 </div>
 
-                <!-- Log Out Button -->
+                
                 
             </nav>
         </aside>

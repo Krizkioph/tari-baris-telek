@@ -28,7 +28,7 @@ class AdminController extends Controller
     public function view_galeri()
     {
         return view('admin.view-galeri', [
-            'data' => Galeri::with('user')->get(),
+            'galeri' => Galeri::with('user')->get(),
         ]);
     }
 
@@ -49,7 +49,7 @@ class AdminController extends Controller
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
             'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, svg.',
-            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 8MB.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
         // Simpan data ke database
@@ -69,6 +69,76 @@ class AdminController extends Controller
 
         toastr()->success('Foto berhasil ditambahkan ke Galeri.');
 
+
+        return redirect()->back();
+    }
+
+    public function edit_galeri($id)
+    {
+
+        return view('admin.edit-galeri', [
+            'data' => Galeri::find($id)
+        ]);
+    }
+
+    public function update_galeri(Request $request, $id)
+    {
+        // Validasi input
+        $request->validate([
+            'deskripsi' => 'required|string',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4048',
+        ], [
+            'deskripsi.required' => 'Deskripsi wajib diisi.',
+            'foto.image' => 'File harus berupa gambar.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, svg.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
+        ]);
+
+        // Simpan data ke database
+        $data = Galeri::find($id);
+        if (!$data) {
+            toastr()->error('Foto tidak ditemukan.');
+            return redirect()->back();
+        }
+        $data->deskripsi = $request->deskripsi;
+        $data->user_id = Auth::id();
+
+        // Handle file upload
+        if ($request->hasFile('foto')) {
+            // Hapus foto lama jika ada
+            if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
+                unlink(public_path('galeri/' . $data->foto));
+            }
+
+            $foto = $request->file('foto');
+            $namaFoto = time() . '.' . $foto->getClientOriginalExtension();
+            $foto->move(public_path('galeri'), $namaFoto);
+            $data->foto = $namaFoto;
+        }
+
+        $data->save();
+
+        toastr()->success('Foto berhasil diupdate.');
+
+        return redirect()->route('view_galeri');
+    }
+
+    public function delete_galeri($id)
+    {
+        $data = Galeri::find($id);
+        if (!$data) {
+            toastr()->error('Foto tidak ditemukan.');
+            return redirect()->back();
+        }
+
+        // Hapus foto
+        if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
+            unlink(public_path('galeri/' . $data->foto));
+        }
+
+        $data->delete();
+
+        toastr()->success('Foto berhasil dihapus.');
 
         return redirect()->back();
     }
