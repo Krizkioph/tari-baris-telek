@@ -1,11 +1,13 @@
 <x-admin-layout>
 
     <div>
-        <x-page-heading>Edit Foto</x-page-heading>
+        <x-page-heading>Edit Informasi</x-page-heading>
         <div class="">
-            <x-forms.form method="POST" action="/dashboard/update_galeri/{{$data->id}}" enctype="multipart/form-data">
+            <x-forms.form method="POST" action="/dashboard/update_informasi/{{$data->id}}" enctype="multipart/form-data">
                 @method('PATCH')
     
+                <x-forms.input name="judul" label="Judul" value="{{ $data->judul }}" required />
+                <x-forms.error name="judul" />
                 <x-forms.textarea name="deskripsi" label="Deskripsi" value="{{ $data->deskripsi }}" required />
                 <x-forms.error name="deskripsi" />
                 <div class="p-4 border rounded-lg shadow-lg bg-white/10 border-white/10">

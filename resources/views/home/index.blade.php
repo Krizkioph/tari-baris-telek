@@ -10,7 +10,7 @@
         <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start">
             <h1 class="mt-4 text-3xl font-bold text-center transition-colors duration-300 sm:mt-0 md:text-2xl lg:text-4xl hover:text-emas">Tari Baris Gede Telek</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
-                Tari Baris Gede Télék berasal dari desa adat Sanur yang termasuk ke dalam bagian wilayah Kota Denpasar. Tari Baris Gede Télék adalah tarian sakral yang sering dipentaskan saat piodalan Tilem Kajeng atau setiap enam bulan kalender Bali di Pura Dalem Kedewatan.
+                Tari Baris Gede Télék, yang berasal dari desa adat Sanur, wilayah yang terletak dalam Kota Denpasar, merupakan sebuah tarian sakral yang sarat akan makna. Tarian ini sering dipentaskan pada saat piodalan Tilem Kajeng, yang berlangsung setiap enam bulan dalam kalender Bali, di Pura Dalem Kedewatan, menampilkan keagungan budaya dan tradisi yang mendalam.
             </p>
         </div>
     </div>

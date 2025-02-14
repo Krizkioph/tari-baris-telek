@@ -14,9 +14,13 @@ Route::get('/busana', [HomeController::class, 'busana'])->name('busana');
 Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/view_informasi', [AdminController::class, 'view_informasi'])->name('view_informasi');
-    Route::get('/dashboard/create_informasi', [AdminController::class, 'create_informasi'])->name('create_informasi');
+    Route::get('/dashboard/tambah_informasi', [AdminController::class, 'tambah_informasi'])->name('tambah_informasi');
+    Route::post('/dashboard/store_informasi', [AdminController::class, 'store_informasi'])->name('store_informasi');
+    Route::get('/dashboard/edit_informasi/{id}', [AdminController::class, 'edit_informasi'])->name('edit_informasi');
+    Route::patch('/dashboard/update_informasi/{id}', [AdminController::class, 'update_informasi'])->name('update_informasi');
+    Route::delete('/dashboard/delete_informasi/{id}', [AdminController::class, 'delete_informasi'])->name('delete_informasi');
     Route::get('/dashboard/view_galeri', [AdminController::class, 'view_galeri'])->name('view_galeri');
-    Route::get('/dashboard/create_galeri', [AdminController::class, 'create_galeri'])->name('create_galeri');
+    Route::get('/dashboard/tambah_galeri', [AdminController::class, 'tambah_galeri'])->name('tambah_galeri');
     Route::post('/dashboard/store_galeri', [AdminController::class, 'store_galeri'])->name('store_galeri');
     Route::get('/dashboard/edit_galeri/{id}', [AdminController::class, 'edit_galeri'])->name('edit_galeri');
     Route::patch('/dashboard/update_galeri/{id}', [AdminController::class, 'update_galeri'])->name('update_galeri');

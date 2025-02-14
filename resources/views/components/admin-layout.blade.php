@@ -17,7 +17,7 @@
     <div class="flex flex-row ">
 
          <!-- Sidebar -->
-         <aside class="flex flex-col w-64 h-screen bg-gray-600">
+         <aside class="flex flex-col w-64 min-h-screen bg-gray-600">
             <div class="p-4 border-b border-gray-500">
                 <div class="flex items-center p-2 space-x-2 border border-black rounded-md">
                     <img src="{{Vite::asset('resources/images/logo-profile.png')}}" alt="User" class="w-8 h-8 rounded-full">
@@ -42,7 +42,7 @@
                 <div class="space-y-2">
 
                     <div class="relative mb-4">
-                        <a href="/" class="block w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">
+                        <a href="/dashboard" class="block w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">
                             Home
                         </a>                        
                     </div>
@@ -52,7 +52,7 @@
                             Informasi
                         </button>
                         <div id="info-dropdown" class="mt-2 ml-2 space-y-2 dropdown-content">
-                            <a href="/dashboard/create_informasi" class="block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas  {{ request()->routeIs('create_informasi') ? 'text-emas font-bold' : '' }}">Tambah Informasi</a>
+                            <a href="/dashboard/tambah_informasi" class="block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas  {{ request()->routeIs('tambah_informasi') ? 'text-emas font-bold' : '' }}">Tambah Informasi</a>
                             <a href="/dashboard/view_informasi" class="block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas  {{ request()->routeIs('view_informasi') ? 'text-emas font-bold' : '' }}">View Informasi</a>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             Galeri
                         </button>
                         <div id="galeri-dropdown" class="mt-2 ml-2 space-y-2 dropdown-content">
-                            <a href="/dashboard/create_galeri" class="{{ request()->routeIs('create_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded  hover:bg-gray-500 hover:text-emas">Tambah Foto</a>
+                            <a href="/dashboard/tambah_galeri" class="{{ request()->routeIs('tambah_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded  hover:bg-gray-500 hover:text-emas">Tambah Galeri</a>
                             <a href="/dashboard/view_galeri" class=" {{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Galeri</a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
             </nav>
         </aside>
 
-        <main class="flex-1 mt-20 max-w-[986px] mx-16 min-w-0 overflow-auto">
+        <main class="flex-1 mt-20 max-w-[1180px] ml-14 min-w-0 overflow-auto">
             {{ $slot }}
         </main>
     </div>

@@ -47,8 +47,15 @@ class User extends Authenticatable
         ];
     }
 
-    public function galeris()
+    public function galeri()
     {
+        // Relasi tabel user dengan galeri (one to many)
         return $this->hasMany(Galeri::class);
+    }
+
+    public function information()
+    {
+        // Relasi tabel user dengan information (one to many)
+        return $this->hasMany(Information::class);
     }
 }
