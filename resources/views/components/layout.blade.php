@@ -16,7 +16,7 @@
 
         <!-- Header Image -->
         <div>
-            <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-20">
+            <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-24">
         </div>
         
         <nav class="text-white border-b-2 border-abu">
