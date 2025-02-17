@@ -10,7 +10,7 @@
         <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start">
             <h1 class="mt-4 text-3xl font-bold text-center transition-colors duration-300 sm:mt-0 md:text-2xl lg:text-4xl hover:text-emas">Tari Baris Gede Telek</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
-                Tari Baris Gede Télék, yang berasal dari desa adat Sanur, wilayah yang terletak dalam Kota Denpasar, merupakan sebuah tarian sakral yang sarat akan makna. Tarian ini sering dipentaskan pada saat piodalan Tilem Kajeng, yang berlangsung setiap enam bulan dalam kalender Bali, di Pura Dalem Kedewatan, menampilkan keagungan budaya dan tradisi yang mendalam.
+                Tari Baris Gede Télék berasal dari desa adat Sanur, wilayah yang terletak dalam Kota Denpasar, merupakan sebuah tarian sakral yang sarat akan makna. Tarian ini sering dipentaskan pada saat piodalan Tilem Kajeng, yang berlangsung setiap enam bulan dalam kalender Bali, di Pura Dalem Kedewatan.
             </p>
         </div>
     </div>
@@ -18,23 +18,35 @@
 
     {{-- INFORMATION --}}
     <div class="mt-24 md:mt-36">
-        <x-page-heading>Information</x-page-heading>
+        <x-page-heading>Informasi</x-page-heading>
         
         <div class="px-4">
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
-                    <!-- Card 1 -->
                     
-                    <x-card-information/>
-    
-                    <!-- Card 2 & 3 (duplicate structure as needed) -->
-                    <x-card-information/>
-                    
-                    <x-card-information/>
+                    @foreach ($informasi as $data)
+                        <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
+                            <!-- Teks dengan tinggi tetap -->
+                            <a href="">
+
+                                <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
+                                    {{$data->judul}}
+                                </p>
+                            </a>
+                            <div class="relative overflow-hidden border rounded-md aspect-square border-white/5">
+                                <img 
+                                    src="{{asset('galeri/' . $data->foto)}}" 
+                                    alt="{{$data->judul}}" 
+                                    class="object-cover w-full h-full transition-all duration-300 transform "
+                                >
+                            </div>
+                            <p class="mt-4 text-xs text-right text-white md:text-sm">{{$data->created_at->format('d - M - Y')}}</p>
+                        </div>
+                    @endforeach
     
                     <!-- More Button -->
                     <div class="flex justify-center mt-6 col-span-full md:mt-8">
-                        <a href="#" class="inline-block px-6 py-2 font-semibold text-white transition duration-300 bg-blue-600 rounded-lg shadow-md hover:text-emas hover:bg-blue-700">
+                        <a href="/sejarah" class="inline-block px-6 py-2 font-semibold text-white transition duration-300 bg-blue-600 rounded-lg shadow-md hover:text-emas hover:bg-blue-700">
                             More
                         </a>
                         
@@ -76,7 +88,7 @@
     
 
             <div class="flex justify-center mt-6 col-span-full md:mt-8">
-                <a href="#" class="inline-block px-6 py-2 font-semibold text-white transition duration-300 bg-blue-600 rounded-lg shadow-md hover:text-emas hover:bg-blue-700">
+                <a href="/galeri" class="inline-block px-6 py-2 font-semibold text-white transition duration-300 bg-blue-600 rounded-lg shadow-md hover:text-emas hover:bg-blue-700">
                     More
                 </a>
                 

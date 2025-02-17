@@ -9,6 +9,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/sejarah', [HomeController::class, 'sejarah'])->name('sejarah');
 Route::get('/busana', [HomeController::class, 'busana'])->name('busana');
+Route::get('/gerakan', [HomeController::class, 'gerakan'])->name('gerakan');
+Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
+Route::get('/tentang', [HomeController::class, 'tentang'])->name('tentang');
+Route::get('lokasi', [HomeController::class, 'lokasi'])->name('lokasi');
 
 
 Route::middleware(['auth'])->group(callback: function () {

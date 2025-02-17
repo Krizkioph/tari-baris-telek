@@ -12,41 +12,37 @@
 </head>
 <body class="pb-20 text-white bg-black font-hanken-grotest">
 
-     <!-- Header Image -->
-    <div>
-        <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-20">
-    </div>
+    <div class="">
 
-    <nav class="text-white border-b-2 border-abu">
-        <div class="flex items-center justify-between py-4">
-            <!-- Navigasi Tengah -->
-            <div class="flex justify-center flex-1">
-                <ul class="flex justify-center space-x-8 text-m">
-                    <li><a href="/" class="hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
+        <!-- Header Image -->
+        <div>
+            <img src="{{Vite::asset('resources/images/header-image.png')}}" alt="Tari Baris Telek" class="w-full h-20">
+        </div>
+        
+        <nav class="text-white border-b-2 border-abu">
+            <div class="flex items-center justify-between py-4">
+                <!-- Navigasi Tengah -->
+                <div class="flex justify-center flex-1">
+                    <ul class="flex justify-center space-x-8 text-m">
+                        <li><a href="/" class="hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
                     <li><a href="/sejarah" class="hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
                     <li><a href="/busana" class="hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>
-                    <li><a href="/" class="hover:hover:text-emas">Gerakan</a></li>
-                    <li><a href="/" class="hover:hover:text-emas">Galeri</a></li>
-                    <li><a href="/" class="hover:hover:text-emas">Tentang</a></li>
-                    <li><a href="/" class="hover:hover:text-emas">Lokasi</a></li>
+                    <li><a href="/gerakan" class="hover:text-emas {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a></li>
+                    <li><a href="/galeri" class="hover:text-emas {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a></li>
+                    <li><a href="/tentang" class="hover:text-emas {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a></li>
+                    <li><a href="/lokasi" class="hover:text-emas {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a></li>
                 </ul>
             </div>
-    
-            <!-- Tombol Log Out -->
-            {{-- @auth    
-            <form method="POST" action="/logout" class="mr-4">
-                @csrf
-                @method('DELETE')
-                <button class="text-m hover:text-gray-400">Log Out</button>
-            </form>
-            @endauth --}}
+            
         </div>
     </nav>
     
-
-
+    </div>
+    
+    
     <main class="mt-20 max-w-[986px] mx-auto">
         {{ $slot }}
     </main>
+
 </body>
 </html>

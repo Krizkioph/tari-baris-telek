@@ -28,4 +28,45 @@
             </p>
         </div>
     </div>
+
+
+
+
+
+    {{-- INFORMATION --}}
+    <div class="mt-24 md:mt-36">
+        <x-page-heading>Informasi</x-page-heading>
+        
+        <div class="px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
+                    
+                    @foreach ($informasi as $data)
+                        <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
+                            <!-- Teks dengan tinggi tetap -->
+                            <a href="">
+
+                                <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
+                                    {{$data->judul}}
+                                </p>
+                            </a>
+                            <div class="relative overflow-hidden border rounded-md aspect-square border-white/5">
+                                <img 
+                                    src="{{asset('galeri/' . $data->foto)}}" 
+                                    alt="{{$data->judul}}" 
+                                    class="object-cover w-full h-full transition-all duration-300 transform "
+                                >
+                            </div>
+                            <p class="mt-4 text-xs text-right text-white md:text-sm">{{$data->created_at->format('d - M - Y')}}</p>
+                        </div>
+                    @endforeach
+    
+                    <!-- More Button -->
+                    <div class="mt-6">
+                        {{ $informasi->links() }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </x-layout>
