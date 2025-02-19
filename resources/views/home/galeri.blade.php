@@ -26,7 +26,7 @@
                         alt="{{ $data->deskripsi }}" 
                         width="300" 
                         height="300" 
-                        class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg"
+                        class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-md hover:shadow-emas"
                     >
                 @endforeach
             </div>

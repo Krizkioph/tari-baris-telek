@@ -4,7 +4,7 @@
         <img 
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-56 transition-shadow duration-300 shadow-lg rounded-xl hover:shadow-2xl md:w-1/2 md:h-72 lg:h-96"
+            class="object-cover w-full h-56 transition-shadow duration-300 hover:shadow-emas rounded-xl hover:shadow-md md:w-1/2 md:h-72 lg:h-96"
         >
     
         <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start">
@@ -64,12 +64,12 @@
             <img 
                 src="{{ Vite::asset('resources/images/penari.png') }}" 
                 alt="Penari" 
-                class="w-full max-w-xs transition-shadow duration-300 md:max-w-none md:w-64 lg:w-72 lg:mt-8 shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)]"
+                class="w-full max-w-xs transition-shadow duration-300 shadow-md hover:shadow-emas md:max-w-none md:w-64 lg:w-72 lg:mt-8"
             >
             <img 
                 src="{{ Vite::asset('resources/images/petelek.png') }}" 
                 alt="Petelek" 
-                class="w-full max-w-xs transition-shadow duration-300 md:max-w-none md:w-64 lg:w-72 lg:mt-8 shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)]"
+                class="w-full max-w-xs transition-shadow duration-300 shadow-md md:max-w-none md:w-64 lg:w-72 lg:mt-8 hover:shadow-emas"
             >
         </div>
     </div>
@@ -82,7 +82,7 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
-                    <img src="{{asset('galeri/' . $data->foto)}}" alt="{{$data->deskripsi}}" width="300" height="300" class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-lg">
+                    <img src="{{asset('galeri/' . $data->foto)}}" alt="{{$data->deskripsi}}" width="300" height="300" class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-md hover:shadow-emas">
                 @endforeach
             </div>
     

@@ -4,7 +4,7 @@
         <img 
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:shadow-sm hover:shadow-emas"
+            class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:shadow-md hover:shadow-emas"
         >
         <div class="w-full md:w-1/2">
             <p class="text-sm text-justify indent-5 md:indent-10 md:text-base lg:text-m">
@@ -19,7 +19,7 @@
             <img 
                 src="{{ Vite::asset('resources/images/tari-telek.jpg') }}" 
                 alt="Detail Tari Baris Gede Télék" 
-                class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-sm hover:shadow-emas"
+                class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-md hover:shadow-emas"
             >
         </div>
         <div class="w-full md:w-1/2 md:order-1 md:pr-5">

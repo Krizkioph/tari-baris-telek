@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center justify-center px-6 mx-auto mb-16 max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12">
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
-                class="w-full h-full transition-shadow duration-300 shadow-lg rounded-xl hover:shadow-2xl" 
+                class="w-full h-full transition-shadow duration-300 shadow-lg rounded-xl hover:shadow-md hover:shadow-emas" 
                 src="https://www.youtube.com/embed/EukidnkkSqk?si=6e3HpfnYAVJ_OR6P" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -25,7 +25,7 @@
     <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16">
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
-                class="w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-sm hover:shadow-emas" 
+                class="w-full h-48 mb-4 transition-shadow md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-md hover:shadow-emas" 
                 src="https://www.youtube.com/embed/EukidnkkSqk?si=6e3HpfnYAVJ_OR6P" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -46,7 +46,7 @@
     <div class="flex flex-col items-center justify-center px-6 mx-auto mt-16 max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12">
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
-                class="w-full h-full transition-shadow duration-300 shadow-lg rounded-xl hover:shadow-2xl" 
+                class="w-full h-full transition-shadow duration-300 shadow-lg rounded-xl hover:shadow-md hover:shadow-emas" 
                 src="https://www.youtube.com/embed/EukidnkkSqk?si=6e3HpfnYAVJ_OR6P" 
                 title="YouTube video player" 
                 frameborder="0" 
