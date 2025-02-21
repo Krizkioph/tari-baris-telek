@@ -25,7 +25,7 @@
                 <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
                     
                     @foreach ($informasi as $data)
-                        <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
+                        <div class="p-6 text-center transition-shadow bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
                             <!-- Teks dengan tinggi tetap -->
                             <a href="/informasi/{{$data->id}}" class="group">
 
