@@ -27,7 +27,7 @@
                     @foreach ($informasi as $data)
                         <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
                             <!-- Teks dengan tinggi tetap -->
-                            <a href="">
+                            <a href="/informasi/{{$data->id}}" class="group">
 
                                 <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
                                     {{$data->judul}}
@@ -82,7 +82,10 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
+                <a href="/galeri/{{$data->id}}" class="relative overflow-hidden border rounded-lg aspect-square border-white/5">
                     <img src="{{asset('galeri/' . $data->foto)}}" alt="{{$data->deskripsi}}" width="300" height="300" class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-md hover:shadow-emas">
+
+                </a>
                 @endforeach
             </div>
     

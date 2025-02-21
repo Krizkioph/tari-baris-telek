@@ -14,6 +14,9 @@ Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
 Route::get('/tentang', [HomeController::class, 'tentang'])->name('tentang');
 Route::get('lokasi', [HomeController::class, 'lokasi'])->name('lokasi');
 
+Route::get('/informasi/{id}', [HomeController::class, 'show_informasi'])->name('informasi');
+Route::get('/galeri/{id}', [HomeController::class, 'show_galeri'])->name('galeri');
+
 
 Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');

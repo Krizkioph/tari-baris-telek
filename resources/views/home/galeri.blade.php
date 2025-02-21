@@ -21,13 +21,17 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
-                    <img 
+
+                    <a href="/galeri/{{$data->id}}">
+
+                        <img 
                         src="{{ asset('galeri/' . $data->foto) }}" 
                         alt="{{ $data->deskripsi }}" 
                         width="300" 
                         height="300" 
                         class="object-cover w-full transition-all duration-300 transform rounded-lg aspect-square hover:-translate-y-2 hover:shadow-md hover:shadow-emas"
-                    >
+                        >
+                    </a>
                 @endforeach
             </div>
 

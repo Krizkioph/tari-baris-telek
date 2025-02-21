@@ -50,4 +50,19 @@ class HomeController extends Controller
         return view('home.lokasi');
     }
 
+
+
+    public function show_informasi($id)
+    {
+        return view('home.show-informasi', [
+            'informasi' => Information::findOrFail($id),
+        ]);
+    }
+
+    public function show_galeri($id)
+    {
+        return view('home.show-galeri', [
+            'galeri' => Galeri::findOrFail($id),
+        ]);
+    }
 }

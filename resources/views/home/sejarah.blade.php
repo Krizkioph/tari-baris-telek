@@ -44,7 +44,7 @@
                     @foreach ($informasi as $data)
                         <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
                             <!-- Teks dengan tinggi tetap -->
-                            <a href="">
+                            <a href="/informasi/{{$data->id}}" class="group">
 
                                 <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
                                     {{$data->judul}}
