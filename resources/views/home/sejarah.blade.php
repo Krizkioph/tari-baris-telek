@@ -14,7 +14,7 @@
     </div>
 
     <!-- Section 2 -->
-    <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16">
+    <div class="flex flex-col items-center px-4 mx-auto mb-28 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-32">
         <div class="w-full md:w-1/2 md:order-2">
             <img 
                 src="{{ Vite::asset('resources/images/tari-telek.jpg') }}" 
@@ -30,6 +30,16 @@
     </div>
 
 
+    <!-- Makna Section -->
+    <div class="max-w-4xl px-4 mx-auto mb-20 md:mb-28">
+        <x-page-heading>Makna</x-page-heading>
+        <div class="p-6 mt-8 border bg-white/5 rounded-xl border-white/10">
+            <p class="text-sm leading-relaxed text-center md:text-base lg:text-lg md:leading-loose">
+                Makna Tari Baris Gede Télék yaitu sebagai pengantar atau pemendakan Ida Bhatara untuk medal atau keluar dari Griya Jero Gede Sanur menuju Pura Dalem Kedewatan sebagai lokasi pelaksanaan piodalan Tilem Kajeng, jadi kalau Tari Baris Gede Télék tidak dipentaskan di anggap ida bahatara tidak tedun.
+            </p>
+        </div>
+    </div>
+
 
 
 
@@ -42,14 +52,13 @@
                 <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
                     
                     @foreach ($informasi as $data)
+                    <a href="/informasi/{{$data->id}}" class="group">
                         <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
                             <!-- Teks dengan tinggi tetap -->
-                            <a href="/informasi/{{$data->id}}" class="group">
-
-                                <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
-                                    {{$data->judul}}
-                                </p>
-                            </a>
+                            
+                            <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
+                                {{$data->judul}}
+                            </p>
                             <div class="relative overflow-hidden border rounded-md aspect-square border-white/5">
                                 <img 
                                     src="{{asset('galeri/' . $data->foto)}}" 
@@ -59,6 +68,7 @@
                             </div>
                             <p class="mt-4 text-xs text-right text-white md:text-sm">{{$data->created_at->format('d - M - Y')}}</p>
                         </div>
+                    </a>
                     @endforeach
     
                     <!-- More Button -->
