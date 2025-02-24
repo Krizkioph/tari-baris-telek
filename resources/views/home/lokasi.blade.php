@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="flex items-center justify-center min-h-screen rounded-lg shadow-md bg-white/10 shadow-emas">
+    <div class="flex items-center justify-center min-h-screen border rounded-lg shadow-md bg-white/5 border-white/15">
         <div class="w-full max-w-4xl p-4">
 
             <x-page-heading>Pura Dalem Kedewatan Sanur</x-page-heading>

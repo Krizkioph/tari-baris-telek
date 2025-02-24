@@ -1,10 +1,12 @@
 <x-layout>
+    
+
     <!-- Section 1 -->
     <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16">
         <img 
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:shadow-md hover:shadow-emas"
+            class="object-cover w-full h-48 mb-4 transition-shadow md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:shadow-md hover:shadow-emas"
         >
         <div class="w-full md:w-1/2">
             <p class="text-sm text-justify indent-5 md:indent-10 md:text-base lg:text-m">
@@ -19,7 +21,7 @@
             <img 
                 src="{{ Vite::asset('resources/images/tari-telek.jpg') }}" 
                 alt="Detail Tari Baris Gede Télék" 
-                class="object-cover w-full h-48 mb-4 transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-md hover:shadow-emas"
+                class="object-cover w-full h-48 mb-4 transition-shadow md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-md hover:shadow-emas"
             >
         </div>
         <div class="w-full md:w-1/2 md:order-1 md:pr-5">
@@ -33,7 +35,7 @@
     <!-- Makna Section -->
     <div class="max-w-4xl px-4 mx-auto mb-20 md:mb-28">
         <x-page-heading>Makna</x-page-heading>
-        <div class="p-6 mt-8 border bg-white/5 rounded-xl border-white/10">
+        <div class="p-6 mt-8 border bg-white/5 rounded-xl border-white/15">
             <p class="text-sm leading-relaxed text-center md:text-base lg:text-lg md:leading-loose">
                 Makna Tari Baris Gede Télék yaitu sebagai pengantar atau pemendakan Ida Bhatara untuk medal atau keluar dari Griya Jero Gede Sanur menuju Pura Dalem Kedewatan sebagai lokasi pelaksanaan piodalan Tilem Kajeng, jadi kalau Tari Baris Gede Télék tidak dipentaskan di anggap ida bahatara tidak tedun.
             </p>
@@ -53,7 +55,7 @@
                     
                     @foreach ($informasi as $data)
                     <a href="/informasi/{{$data->id}}" class="group">
-                        <div class="p-6 text-center transition-shadow shadow-[0_8px_20px_-5px_rgba(255,255,255,0.1)] bg-white/5 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
+                        <div class="p-6 text-center transition-shadow border bg-white/5 border-white/15 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
                             <!-- Teks dengan tinggi tetap -->
                             
                             <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
