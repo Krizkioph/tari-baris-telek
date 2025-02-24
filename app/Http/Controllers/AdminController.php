@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use App\Models\Galeri;
 use App\Models\Information;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -12,10 +12,10 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $user = User::all();
+        $admin = Admin::all();
         $galeri = Galeri::all()->count();
         $informasi = Information::all()->count();
-        return view('admin.index', compact('user', 'galeri', 'informasi'));
+        return view('admin.index', compact('admin', 'galeri', 'informasi'));
     }
 
 
@@ -26,7 +26,7 @@ class AdminController extends Controller
     public function view_informasi()
     {
         return view('admin.view-informasi', [
-            'informasi' => Information::with('user')->get(),
+            'informasi' => Information::with('admin')->get(),
         ]);
     }
 
@@ -54,7 +54,7 @@ class AdminController extends Controller
         $data = new Information();
         $data->judul = $request->judul;
         $data->deskripsi = $request->deskripsi;
-        $data->user_id = Auth::id();
+        $data->admin_id = Auth::id();
 
         // Handle file upload
         if ($request->hasFile('foto')) {
@@ -101,7 +101,7 @@ class AdminController extends Controller
         }
         $data->judul = $request->judul;
         $data->deskripsi = $request->deskripsi;
-        $data->user_id = Auth::id();
+        $data->admin_id = Auth::id();
 
         // Handle file upload
         if ($request->hasFile('foto')) {
@@ -152,7 +152,7 @@ class AdminController extends Controller
     public function view_galeri()
     {
         return view('admin.view-galeri', [
-            'galeri' => Galeri::with('user')->get(),
+            'galeri' => Galeri::with('admin')->get(),
         ]);
     }
 
@@ -179,7 +179,7 @@ class AdminController extends Controller
         // Simpan data ke database
         $data = new galeri();
         $data->deskripsi = $request->deskripsi;
-        $data->user_id = Auth::id();
+        $data->admin_id = Auth::id();
 
         // Handle file upload
         if ($request->hasFile('foto')) {
@@ -225,7 +225,7 @@ class AdminController extends Controller
             return redirect()->back();
         }
         $data->deskripsi = $request->deskripsi;
-        $data->user_id = Auth::id();
+        $data->admin_id = Auth::id();
 
         // Handle file upload
         if ($request->hasFile('foto')) {

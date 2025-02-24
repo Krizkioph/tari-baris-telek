@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Galeri extends Model
 {
     protected $table = 'galeri';
-    protected $fillable = ['user_id', 'deskripsi', 'foto'];
+    protected $fillable = ['admin_id', 'deskripsi', 'foto'];
 
-    public function user()
+    public function admin()
     {
-        // Relasi tabel galeri dengan user (one to many)
-        return $this->belongsTo(User::class);
+        // Relasi tabel galeri dengan admin (one to many)
+        return $this->belongsTo(Admin::class);
     }
 }

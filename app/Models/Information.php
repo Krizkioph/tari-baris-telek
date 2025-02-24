@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Information extends Model
 {
     protected $table = 'information';
-    protected $fillable = ['user_id', 'judul', 'deskripsi', 'foto'];
+    protected $fillable = ['admin_id', 'judul', 'deskripsi', 'foto'];
 
-    public function user()
+    public function admin()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Admin::class);
     }
 }

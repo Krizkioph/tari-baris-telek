@@ -17,7 +17,7 @@
                         <tr class="transition hover:bg-gray-800">
                             <td class="px-6 py-4">{{ $loop->iteration }}</td>
                             <td class="px-6 py-4">{{ $data->deskripsi }}</td>
-                            <td class="px-6 py-4">{{ $data->user->name }}</td>
+                            <td class="px-6 py-4">{{ $data->admin->name }}</td>
                             <td class="px-6 py-4">{{ $data->created_at->diffForHumans() }}</td>
                             <td class="px-6 py-4">
                                 <img src="{{ asset('galeri/' . $data->foto) }}" 

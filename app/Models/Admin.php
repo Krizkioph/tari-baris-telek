@@ -7,10 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Admin extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
+
+
+    protected $table = 'admin';
 
     /**
      * The attributes that are mass assignable.
@@ -49,13 +52,13 @@ class User extends Authenticatable
 
     public function galeri()
     {
-        // Relasi tabel user dengan galeri (one to many)
+        // Relasi tabel admin dengan galeri (one to many)
         return $this->hasMany(Galeri::class);
     }
 
     public function information()
     {
-        // Relasi tabel user dengan information (one to many)
+        // Relasi tabel admin dengan information (one to many)
         return $this->hasMany(Information::class);
     }
 }
