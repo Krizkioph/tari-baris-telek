@@ -48,16 +48,15 @@
     {{-- INFORMATION --}}
     <div class="mt-24 md:mt-36">
         <x-page-heading>Informasi</x-page-heading>
-        
+    
         <div class="px-4">
             <div class="max-w-6xl mx-auto">
+                <!-- Grid untuk item dan pagination -->
                 <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
                     
                     @foreach ($informasi as $data)
                     <a href="/informasi/{{$data->id}}" class="group">
                         <div class="p-6 text-center transition-shadow border bg-white/5 border-white/15 md:p-8 rounded-xl hover:shadow-sm hover:shadow-emas group">
-                            <!-- Teks dengan tinggi tetap -->
-                            
                             <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
                                 {{$data->judul}}
                             </p>
@@ -73,12 +72,15 @@
                     </a>
                     @endforeach
     
-                    <!-- More Button -->
-                    <div class="mt-6">
+                    <!-- Pagination berada di tengah grid -->
+                    <div class="flex col-span-1 mt-10 md:col-span-2 lg:col-span-3">
                         {{ $informasi->links() }}
                     </div>
+    
                 </div>
             </div>
         </div>
     </div>
+    
+    
 </x-layout>

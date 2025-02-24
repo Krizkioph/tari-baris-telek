@@ -36,7 +36,7 @@ class HomeController extends Controller
     public function galeri()
     {
         return view('home.galeri', [
-            'galeri' => Galeri::latest()->paginate(3),
+            'galeri' => Galeri::latest()->paginate(2),
         ]);
     }
 

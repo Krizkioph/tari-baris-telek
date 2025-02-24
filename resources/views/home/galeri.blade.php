@@ -36,13 +36,15 @@
                         <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
                     </a>
                 @endforeach
-            </div>
     
-            <!-- Pagination -->
-            <div class="mt-6">
-                {{ $galeri->links() }}
+                <!-- Pagination berada di tengah grid -->
+                <div class="flex col-span-1 mt-10 md:col-span-2 lg:col-span-3">
+                    {{ $galeri->links() }}
+                </div>
+    
             </div>
         </div>
     </div>
+    
 
 </x-layout>
