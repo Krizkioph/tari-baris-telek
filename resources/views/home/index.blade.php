@@ -77,7 +77,7 @@
             </div>
             
             <div class="relative block w-full max-w-xs overflow-hidden border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15">
-                <a href="/busana">
+                <a href="/busana" >
                     <img 
                         src="{{ Vite::asset('resources/images/petelek.png') }}" 
                         alt="Petelek" 

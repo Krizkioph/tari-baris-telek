@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <link rel="icon" href="{{ Vite::asset('resources/images/logo.png') }}" type="image/png">
+    <title>Tari Baris Gede Télék</title>
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 
