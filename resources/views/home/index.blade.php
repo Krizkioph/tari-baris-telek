@@ -61,30 +61,34 @@
         <x-page-heading>Busana</x-page-heading>
     
         <div class="flex flex-col items-center justify-center md:flex-row gap-y-8 md:gap-x-24 lg:gap-x-36">
-            <div class="relative block w-full max-w-xs overflow-hidden rounded-lg group md:w-64 lg:w-72 lg:mt-8">
-                <img 
+            <div class="relative block w-full max-w-xs overflow-hidden border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15">
+                <a href="/busana">
+                    <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
                     alt="Penari" 
-                    class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
-                           filter brightness-95 group-hover:brightness-100 
-                           group-hover:scale-105 
-                           group-hover:shadow-2xl 
-                           group-hover:shadow-[rgba(255,215,0,0.2)]"
-                >
-                <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
+                    class=" w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
+                    filter brightness-95 group-hover:brightness-100 
+                    group-hover:scale-105 
+                    group-hover:shadow-2xl 
+                    group-hover:shadow-[rgba(255,215,0,0.2)]"
+                    >
+                    <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
+                </a>
             </div>
             
-            <div class="relative block w-full max-w-xs overflow-hidden rounded-lg group md:w-64 lg:w-72 lg:mt-8">
-                <img 
-                    src="{{ Vite::asset('resources/images/petelek.png') }}" 
-                    alt="Petelek" 
-                    class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
-                           filter brightness-95 group-hover:brightness-100 
-                           group-hover:scale-105 
-                           group-hover:shadow-2xl 
-                           group-hover:shadow-[rgba(255,215,0,0.2)]"
-                >
-                <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
+            <div class="relative block w-full max-w-xs overflow-hidden border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15">
+                <a href="/busana">
+                    <img 
+                        src="{{ Vite::asset('resources/images/petelek.png') }}" 
+                        alt="Petelek" 
+                        class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
+                            filter brightness-95 group-hover:brightness-100 
+                            group-hover:scale-105 
+                            group-hover:shadow-2xl 
+                            group-hover:shadow-[rgba(255,215,0,0.2)]"
+                    >
+                    <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
+                </a>
             </div>
         </div>
     </div>

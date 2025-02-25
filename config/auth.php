@@ -91,9 +91,9 @@ return [
     */
 
     'passwords' => [
-        'admin' => [ // Ganti dari 'users' ke 'admin'
+        'admin' => [
             'provider' => 'admin',
-            'table' => 'password_reset_tokens', // Tidak perlu env()
+            'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
         ],
