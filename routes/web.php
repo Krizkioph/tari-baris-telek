@@ -18,6 +18,7 @@ Route::get('/informasi/{id}', [HomeController::class, 'show_informasi'])->name('
 Route::get('/galeri/{id}', [HomeController::class, 'show_galeri'])->name('galeri');
 
 
+// Admin
 Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/view_informasi', [AdminController::class, 'view_informasi'])->name('view_informasi');
@@ -26,6 +27,7 @@ Route::middleware(['auth'])->group(callback: function () {
     Route::get('/dashboard/edit_informasi/{id}', [AdminController::class, 'edit_informasi'])->name('edit_informasi');
     Route::patch('/dashboard/update_informasi/{id}', [AdminController::class, 'update_informasi'])->name('update_informasi');
     Route::delete('/dashboard/delete_informasi/{id}', [AdminController::class, 'delete_informasi'])->name('delete_informasi');
+
     Route::get('/dashboard/view_galeri', [AdminController::class, 'view_galeri'])->name('view_galeri');
     Route::get('/dashboard/tambah_galeri', [AdminController::class, 'tambah_galeri'])->name('tambah_galeri');
     Route::post('/dashboard/store_galeri', [AdminController::class, 'store_galeri'])->name('store_galeri');
