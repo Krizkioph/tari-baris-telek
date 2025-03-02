@@ -12,10 +12,12 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $admin = Admin::all();
-        $galeri = Galeri::all()->count();
-        $informasi = Information::all()->count();
-        return view('admin.index', compact('admin', 'galeri', 'informasi'));
+        return view('admin.index', [
+            'admin' => Admin::all(),
+            'galeri' => Galeri::all()->count(),
+            'informasi' => Information::all()->count(),
+        ]);
+
     }
 
 

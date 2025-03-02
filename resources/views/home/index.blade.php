@@ -46,7 +46,7 @@
     
         <div class="flex flex-col items-center justify-center md:flex-row gap-y-8 md:gap-x-24 lg:gap-x-36">
             <div class="relative block w-full max-w-xs overflow-hidden border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15">
-                <a href="/busana">
+                <a href="/busana" target="_blank">
                     <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
                     alt="Penari" 
