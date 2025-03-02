@@ -44,7 +44,7 @@
 
                     <div class="relative mb-4">
                         <a href="/dashboard" class="block w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">
-                            Dashboard
+                            Home
                         </a>                        
                     </div>
                     

@@ -2,11 +2,11 @@
     
 
     <!-- Section 1 -->
-    <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16">
+    <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-4 lg:px-6 md:mb-16">
         <img 
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-48 mb-4 transition-shadow md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:shadow-md hover:shadow-emas"
+            class="object-cover w-full h-48 p-1 mb-4 transition-all duration-300 border border-transparent md:w-1/2 md:h- 64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:border-emas"
         >
         <div class="w-full md:w-1/2">
             <p class="text-justify text-md indent-5 md:indent-10 md:text-base lg:text-md">
@@ -16,12 +16,12 @@
     </div>
 
     <!-- Section 2 -->
-    <div class="flex flex-col items-center px-4 mx-auto mb-28 md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-32">
+    <div class="flex flex-col items-center px-4 mx-auto mb-28 md:flex-row max-w-7xl md:px-4 lg:px-6 md:mb-32">
         <div class="w-full md:w-1/2 md:order-2">
             <img 
                 src="{{ Vite::asset('resources/images/tari-telek.jpg') }}" 
                 alt=" Tari Baris Gede Télék" 
-                class="object-cover w-full h-48 mb-4 transition-shadow md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:shadow-md hover:shadow-emas"
+                class="object-cover w-full h-48 p-1 mb-4 transition-all duration-300 border border-transparent hover:border-emas md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl "
             >
         </div>
         <div class="w-full md:w-1/2 md:order-1 md:pr-5">
@@ -34,8 +34,8 @@
 
     <!-- Makna Section -->
     <div class="max-w-4xl px-4 mx-auto mb-20 md:mb-28">
-        <x-page-heading>Makna</x-page-heading>
-        <div class="p-6 mt-8 border bg-white/5 rounded-xl border-white/15">
+        <x-page-heading>MAKNA</x-page-heading>
+        <div class="p-6 mt-8 transition-all duration-300 border bg-white/5 rounded-xl border-white/15 hover:border-emas">
             <p class="leading-relaxed text-center text-md md:text-base lg:text-lg md:leading-loose">
                 Makna Tari Baris Gede Télék yaitu sebagai pengantar atau pemendakan Ida Bhatara untuk medal atau keluar dari Griya Jero Gede Sanur menuju Pura Dalem Kedewatan sebagai lokasi pelaksanaan piodalan Tilem Kajeng, jadi kalau Tari Baris Gede Télék tidak dipentaskan di anggap ida bahatara tidak tedun.
             </p>
@@ -47,7 +47,7 @@
 
     {{-- INFORMATION --}}
     <div class="mt-24 md:mt-36">
-        <x-page-heading>Informasi</x-page-heading>
+        <x-page-heading>INFORMASI</x-page-heading>
     
         <div class="px-4">
             <div class="max-w-6xl mx-auto">

@@ -26,7 +26,7 @@
 
                 <!-- Program Studi -->
                 <div class="sm:contents">
-                    <p class="mt-4 text-gray-400 sm:mt-0">Program Studi \n:</p>
+                    <p class="mt-4 text-gray-400 sm:mt-0">Program Studi :</p>
                     <p class="text-gray-400">Sistem Informasi</p>
                 </div>
 

@@ -1,7 +1,10 @@
 <x-layout>
-    <div class="max-w-5xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+
+
+    <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <x-button-kembali href="javascript:history.back()" class="mb-4">Kembali</x-button-kembali>
         <!-- Image Section dengan Hover Effect -->
-        <div class="relative overflow-hidden transition-all duration-500 shadow-2xl group rounded-2xl hover:shadow-xl">
+        <div class="relative mt-5 overflow-hidden transition-all duration-500 border border-transparent shadow-2xl group rounded-2xl hover:shadow-xl hover:border-emas">
             <div class="absolute inset-0 z-10 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
             <img 
                 src="{{asset('galeri/'. $informasi->foto)}}" 
