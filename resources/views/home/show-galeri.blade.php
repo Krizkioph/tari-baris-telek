@@ -8,7 +8,7 @@
         <img 
             src="{{asset('galeri/'. $galeri->foto)}}" 
             alt="{{$galeri->deskripsi}}" 
-            class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+            class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] object-contain transform group-hover:scale-105 transition-transform duration-500"
         >
     </div>
 

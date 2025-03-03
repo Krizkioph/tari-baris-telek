@@ -1,14 +1,14 @@
 <x-layout>
 
     <!-- Container untuk iframe YouTube -->
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center">
         <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-xl">
             <iframe 
-                src="https://www.youtube.com/embed/VH_UaOkvOvA?si=Jbd_t9GoW7_pv2-S" 
+                src="https://www.youtube.com/embed/exX3U_6zm38?si=b4NwTZjWR3tufC-n" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
-                class="w-full h-64 transition-all duration-300 border rounded-lg sm:h-96 border-white/15 hover:border-emas"
+                class="w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] transition-all duration-300 border rounded-lg border-white/15 hover:border-emas"
             ></iframe>
         </div>
     </div>
@@ -18,6 +18,7 @@
         <x-page-heading>GALERI</x-page-heading>
     
         <div class="flex flex-col items-center">
+            <!-- Grid untuk galeri -->
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
@@ -36,15 +37,15 @@
                         <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
                     </a>
                 @endforeach
-    
-                <!-- Pagination berada di tengah grid -->
-                <div class="flex col-span-1 mt-10 md:col-span-2 lg:col-span-3">
+            </div>
+
+            <!-- Pagination ditempatkan di luar grid dan diatur di tengah -->
+            <div class="w-full max-w-6xl px-4 mt-10">
+                <div class="flex justify-center">
                     {{ $galeri->links() }}
                 </div>
-    
             </div>
         </div>
     </div>
     
-
 </x-layout>

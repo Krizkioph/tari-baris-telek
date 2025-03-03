@@ -16,6 +16,9 @@
                 >
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
             </div>
+            <div class="max-w-xs p-4 mt-4 text-center border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15">
+                <p class="text-lg font-semibold">Busana putih melambangkan kesucian dan semangat prajurit yang siap bertempur dalam peperangan</p>
+            </div>
         </div>
 
         <!-- Container untuk Petelek -->
@@ -32,6 +35,9 @@
                         group-hover:shadow-[rgba(255,215,0,0.2)]"
                 >
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
+            </div>
+            <div class="max-w-xs p-4 mt-4 text-center border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15">
+                <p class="text-lg font-semibold">Busana hitam merujuk kepada Dewa Siwa dan berfungsi sebagai pembeda utama dari penari lainnya</p>
             </div>
         </div>
     </div>
