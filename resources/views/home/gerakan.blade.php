@@ -1,6 +1,8 @@
 <x-layout>
 
     <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mb-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas hover:-translate-y-1">
+
+        
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
