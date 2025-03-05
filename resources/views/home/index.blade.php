@@ -4,7 +4,7 @@
         <img 
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-56 p-1 transition-all duration-300 border border-transparent hover:border-emas rounded-xl md:w-1/2 md:h-72 lg:h-96"
+            class="object-cover w-full h-56 p-1 transition-all duration-300 border border-transparent hover:border-emas rounded-xl md:w-1/2 md:h-72 lg:h-96 hover:-translate-y-1"
         >
     
         <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start">

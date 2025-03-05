@@ -1,7 +1,7 @@
 @props(['data'])
 
 <a href="/informasi/{{$data->id}}" class="group">
-    <div class="p-6 text-center transition-all duration-300 border bg-white/5 border-white/15 md:p-8 rounded-xl hover:border-emas group">
+    <div class="p-6 text-center transition-all duration-300 border bg-white/5 border-white/15 md:p-8 rounded-xl hover:border-emas group hover:-translate-y-1">
         <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
             {{$data->judul}}
         </p>

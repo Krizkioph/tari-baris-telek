@@ -1,46 +1,83 @@
 <x-layout>
-    <div class="flex flex-col items-center max-w-3xl p-4 mx-auto space-y-6 text-white border rounded-lg shadow-sm bg-white/5 border-white/15 md:p-8 md:flex-row md:space-y-0 md:space-x-8">
-        <!-- Image Container -->
-        <div class="w-full max-w-[12rem] transition-transform duration-300 transform hover:scale-105">
-            <div class="overflow-hidden border rounded-lg aspect-square border-white/15">
-                <img src="{{ Vite::asset('resources/images/VEDANTHA_ADISAPUTRA.png') }}" 
-                     alt="Pembuat" 
-                     class="object-cover w-full h-full">
+    <div class="max-w-3xl p-4 mx-auto space-y-6 md:p-8">
+        <!-- Grid Container -->
+        <div class="grid gap-6 md:grid-cols-2">
+            <!-- Narasumber 1 -->
+            <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/10">
+                <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-cyan-500/10">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-sm font-semibold text-cyan-300">NARASUMBER 1</h3>
+                        <p class="text-lg font-medium ">I Made Artha</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narasumber 2 -->
+            <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/10">
+                <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-red-500/10">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-sm font-semibold text-red-300">NARASUMBER 2</h3>
+                        <p class="text-lg font-medium ">Kadek Sumariyasa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pembimbing 1 -->
+            <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/10">
+                <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-green-500/10">
+                        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-sm font-semibold text-green-300">PEMBIMBING 1</h3>
+                        <p class="text-lg font-medium ">Ketut Gus Oka Ciptahadi, S.Kom., M.Kom</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pembimbing 2 -->
+            <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/10">
+                <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-orange-500/10">
+                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-sm font-semibold text-orange-300">PEMBIMBING 2</h3>
+                        <p class="text-lg font-medium ">I Gusti Ngurah Ady Kusuma, S.Kom., M.Kom</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="w-full text-center md:text-left">
-            <div class="grid gap-3 sm:grid-cols-[auto_1fr] sm:items-baseline">
-                <!-- Name -->
-                <div class="sm:contents">
-                    <p class="text-lg font-bold sm:text-xl">Nama :</p>
-                    <p class="text-lg sm:text-xl">Ida Bagus Vedantha AdiSaputra</p>
+        <!-- Pembuat -->
+        <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/10">
+            <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+            <div class="flex flex-col items-center text-center">
+                <div class="p-3 mb-4 rounded-lg bg-indigo-500/10">
+                    <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
                 </div>
-
-                <!-- NIM -->
-                <div class="sm:contents">
-                    <p class="mt-4 text-gray-400 sm:mt-0">NIM :</p>
-                    <p class="text-gray-400">210030452</p>
-                </div>
-
-                <!-- Program Studi -->
-                <div class="sm:contents">
-                    <p class="mt-4 text-gray-400 sm:mt-0">Program Studi :</p>
-                    <p class="text-gray-400">Sistem Informasi</p>
-                </div>
-
-                <!-- Alamat -->
-                <div class="sm:contents">
-                    <p class="mt-4 text-gray-400 sm:mt-0">Alamat :</p>
-                    <p class="text-gray-400 break-words">Jl. By Pass Gusti Ngurah Rai GG Nuri II/4 Denpasar</p>
-                </div>
-
-                <!-- Sebagai -->
-                <div class="sm:contents">
-                    <p class="mt-4 text-gray-400 sm:mt-0">Sebagai :</p>
-                    <p class="text-gray-400">Pembuat</p>
-                </div>
+                <h3 class="mb-2 text-sm font-semibold text-indigo-300">PEMBUAT WEBSITE</h3>
+                <p class="text-xl font-bold ">Ida Bagus Vedantha AdiSaputra</p>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mb-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas">
+    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mb-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas hover:-translate-y-1">
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
@@ -22,7 +22,7 @@
     </div>
 
 
-    <div class="flex flex-col items-center px-4 py-4 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:border-emas">
+    <div class="flex flex-col items-center px-4 py-4 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:border-emas hover:-translate-y-1">
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
                 class="w-full h-48 mb-4 border md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl border-white/15" 
@@ -43,7 +43,7 @@
     </div>
 
 
-    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mt-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas">
+    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mt-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas hover:-translate-y-1">
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border shadow-lg rounded-xl border-white/15" 
