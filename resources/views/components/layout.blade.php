@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
-<body class="pb-20 text-white bg-black font-hanken-grotest">
+<body class="pb-8 text-white bg-black font-hanken-grotest">
   <div>
     <!-- Header Image -->
     <div class="relative hidden md:block">
@@ -66,7 +66,7 @@
       <div class="flex items-center justify-between py-4">
         <!-- Navigasi Tengah -->
         <div class="flex justify-center flex-1">
-          <ul class="flex justify-center space-x-8 text-md">
+          <ul class="flex justify-center space-x-10 text-md">
             <li><a href="/" class="hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
             <li><a href="/sejarah" class="hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
             <li><a href="/busana" class="hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>

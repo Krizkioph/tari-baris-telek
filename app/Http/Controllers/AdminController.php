@@ -7,6 +7,7 @@ use App\Models\Galeri;
 use App\Models\Information;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -20,6 +21,49 @@ class AdminController extends Controller
 
     }
 
+    public function ganti_password()
+    {
+        return view('admin.ganti-password');
+    }
+
+    // Ganti Password Admin
+    public function update_password(Request $request)
+    {
+        // Validasi input
+        $request->validate([
+            'password_lama' => 'required',
+            'password_baru' => 'required|min:8',
+            'password_confirmation' => 'required|same:password_baru',
+        ], [
+            'password_lama.required' => 'Password lama wajib diisi.',
+            'password_baru.required' => 'Password baru wajib diisi.',
+            'password_baru.min' => 'Password baru minimal 8 karakter.',
+            'password_confirmation.required' => 'Konfirmasi password wajib diisi.',
+            'password_confirmation.same' => 'Konfirmasi password tidak sama dengan password baru.',
+        ]);
+
+        // Cek password lama
+        if (!password_verify($request->password_lama, Auth::user()->password)) {
+            toastr()->error('Password lama salah.');
+            return redirect()->back();
+        }
+
+        // Update password
+        $admin = Admin::find(Auth::id());
+        $admin->password = bcrypt($request->password_baru);
+        $admin->save();
+
+        toastr()->success('Password berhasil diperbarui. Silakan login kembali.');
+
+        // Logout admin setelah password diubah
+        Auth::logout();
+
+        // Redirect ke halaman login
+        return redirect()->route('login');
+
+    }
+
+
 
     // =================================================================================
     // ===============================  Information ====================================
@@ -28,7 +72,7 @@ class AdminController extends Controller
     public function view_informasi()
     {
         return view('admin.view-informasi', [
-            'informasi' => Information::with('admin')->get(),
+            'informasi' => Information::with('admin')->paginate(8),
         ]);
     }
 
@@ -154,7 +198,7 @@ class AdminController extends Controller
     public function view_galeri()
     {
         return view('admin.view-galeri', [
-            'galeri' => Galeri::with('admin')->get(),
+            'galeri' => Galeri::with('admin')->paginate(8),
         ]);
     }
 

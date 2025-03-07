@@ -36,6 +36,12 @@
                     @endforeach
                 </tbody>
             </table>
+
+            @if ($galeri->hasPages())
+                <div class="flex justify-center py-4 mt-10 border-t border-gray-700">
+                    {{ $galeri->links() }}
+                </div>
+            @endif
         </div>
     </div>
 </x-admin-layout>

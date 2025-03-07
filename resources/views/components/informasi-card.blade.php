@@ -5,12 +5,12 @@
         <p class="h-16 mb-4 overflow-hidden text-lg font-bold leading-tight text-white line-clamp-3 group-hover:text-emas">
             {{$data->judul}}
         </p>
-        <div class="relative overflow-hidden border rounded-md aspect-square border-white/5">
+        <div class="relative overflow-hidden border rounded-md aspect-square border-white/15">
             <img 
             src="{{asset('galeri/' . $data->foto)}}" 
             alt="{{$data->judul}}" 
-            class="object-cover w-full h-full transition-all duration-300 transform "
-            >
+            class="object-cover w-full h-full transition-all duration-300 transform border border-white/15" 
+            />
         </div>
         <p class="mt-4 text-xs text-right text-white md:text-sm">{{$data->created_at->format('d - M - Y')}}</p>
     </div>

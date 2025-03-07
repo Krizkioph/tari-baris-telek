@@ -1,9 +1,9 @@
 <x-layout>
-    <div class="max-w-3xl p-4 mx-auto space-y-6 md:p-0">
+    <div class="max-w-3xl mx-auto space-y-6">
         <!-- Grid Container -->
         <div class="grid gap-6 md:grid-cols-2">
             <!-- Narasumber 1 -->
-            <div class="relative p-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/15">
+            <div class="relative pt-6 transition-all duration-300 border group rounded-2xl bg-white/5 hover:-translate-y-1 hover:border-emas border-white/15">
                 <div class="absolute inset-0 border border-white/15 rounded-2xl"></div>
                 <div class="flex items-start gap-4">
                     <div class="p-3 rounded-lg bg-cyan-500/10">

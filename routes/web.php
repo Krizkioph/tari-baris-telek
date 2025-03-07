@@ -20,6 +20,9 @@ Route::get('/galeri/{id}', [HomeController::class, 'show_galeri'])->name('galeri
 
 // Admin
 Route::middleware(['auth'])->group(callback: function () {
+    Route::get('/profile/ganti_password', [AdminController::class, 'ganti_password'])->name('ganti_password');
+    Route::patch('/profile/update_password', [AdminController::class, 'update_password'])->name('update_password');
+
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/view_informasi', [AdminController::class, 'view_informasi'])->name('view_informasi');
     Route::get('/dashboard/tambah_informasi', [AdminController::class, 'tambah_informasi'])->name('tambah_informasi');

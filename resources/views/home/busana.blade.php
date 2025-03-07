@@ -3,7 +3,11 @@
         
         <!-- Container untuk Penari -->
         <div class="text-center">
-            <p class="mb-2 text-3xl font-bold text-center text-transparent md:text-3xl lg:text-4xl bg-clip-text from-emas bg-gradient-to-r to-white">Penari</p> 
+            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl">
+                Penari
+                <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
+            </p>
+            
             <div class="relative block w-full max-w-xs overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                 <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
@@ -16,14 +20,49 @@
                 >
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
             </div>
-            <div class="max-w-xs p-4 mt-4 text-center border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15">
-                <p class="text-lg font-semibold">Busana putih melambangkan kesucian dan semangat prajurit yang siap bertempur dalam peperangan</p>
+
+            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left transition-all duration-300 border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-white/90">Pakaian Putih, Celana Putih</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-medium text-white/90">Aksesoris</span>
+                            <p class="text-sm text-white/60">Bebuntilan, Lamak Geringsing, Putih dan Kuning awiran, Gelungan</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-8 4-8-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-medium text-white/90">Properti Tari</span>
+                            <p class="text-sm text-white/60">Keris, Tombak 4 Meter</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Container untuk Petelek -->
         <div class="text-center">
-            <p class="mb-2 text-3xl font-bold text-center text-transparent md:text-3xl lg:text-3xl bg-clip-text from-emas bg-gradient-to-r to-white">Petelek</p> 
+            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl">
+                Petelek
+                <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
+            </p>
             <div class="relative block w-full max-w-xs overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                 <img 
                     src="{{ Vite::asset('resources/images/petelek.png') }}" 
@@ -36,8 +75,39 @@
                 >
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
             </div>
-            <div class="max-w-xs p-4 mt-4 text-center border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15">
-                <p class="text-lg font-semibold">Busana hitam merujuk kepada Dewa Siwa dan berfungsi sebagai pembeda utama dari penari lainnya</p>
+            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-white/90">Pakaian Hitam, Celana Putih</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-medium text-white/90">Aksesoris</span>
+                            <p class="text-sm text-white/60">Simping, Bebuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-full bg-emas/20">
+                            <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-8 4-8-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-medium text-white/90">Properti Tari</span>
+                            <p class="text-sm text-white/60">Keris</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
