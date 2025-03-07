@@ -21,6 +21,41 @@ class AdminController extends Controller
 
     }
 
+    // =================================================================================
+    // ===================================  Profile ====================================
+    // =================================================================================
+
+    public function profile()
+    {
+        return view('admin.profile');
+    }
+
+    public function ganti_nama()
+    {
+        return view('admin.ganti-nama');
+    }
+
+    // Update Nama Admin
+    public function update_nama(Request $request)
+    {
+        // Validasi input
+        $request->validate([
+            'name' => 'required|string',
+        ], [
+            'name.required' => 'Nama wajib diisi.',
+        ]);
+
+        // Update nama admin
+        $admin = Admin::find(Auth::id());
+        $admin->name = $request->name;
+        $admin->save();
+
+        toastr()->success('Nama berhasil diperbarui.');
+
+        return redirect()->back();
+    }
+
+
     public function ganti_password()
     {
         return view('admin.ganti-password');

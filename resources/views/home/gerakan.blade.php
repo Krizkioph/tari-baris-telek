@@ -1,8 +1,14 @@
 <x-layout>
 
-    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mb-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas hover:-translate-y-1 bg-white/5 group">
-
-        
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group">
+        <!-- Garis di pojok kiri atas  -->
+        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
+    
+        {{-- Garis di pojok kanan bawah  --}}
+        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+    
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
@@ -16,15 +22,25 @@
         </div>
     
         <div class="flex flex-col items-center justify-center mt-8 md:w-1/2 md:mt-0 lg:items-start">
-            <h1 class="text-4xl font-bold text-center text-transparent transition-colors duration-300 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">Enggod Capung</h1>
+            <h1 class="ml-0 text-4xl font-bold text-center text-transparent transition-colors duration-300 md:ml-9 lg:ml-9 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">Enggod Capung</h1>
             <p class="mt-6 text-lg leading-relaxed text-justify md:text-base lg:text-lg indent-5 md:indent-10">
                 Gerakan kepala seperti gerakan kepala capung.
             </p>
         </div>
     </div>
+    
 
 
-    <div class="flex flex-col items-center px-4 py-4 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:border-emas hover:-translate-y-1 bg-white/5">
+
+    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group">
+        <!-- Garis pojok kiri atas -->
+        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
+        
+        {{-- Garis di pojok kanan bawah  --}}
+        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
                 class="w-full h-48 mb-4 border md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl border-white/15" 
@@ -44,8 +60,16 @@
         </div>
     </div>
 
+    <!-- Div Kedua -->
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group">
+        <!-- Garis pojok kiri atas -->
+        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
+        
+        {{-- Garis di pojok kanan bawah  --}}
+        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
+        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
 
-    <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto mt-16 transition-all duration-500 border rounded-md max-w-7xl md:flex-row md:items-center md:space-x-12 lg:px-12 border-white/15 hover:border-emas hover:-translate-y-1 bg-white/5">
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border shadow-lg rounded-xl border-white/15" 
@@ -57,11 +81,10 @@
                 allowfullscreen>
             </iframe>
         </div>
-    
-    
+
         <div class="flex flex-col items-center justify-center mt-8 md:w-1/2 md:mt-0 lg:items-start">
-            <h1 class="text-4xl font-bold text-transparent transition-colors duration-300 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">Nyantra</h1>
-            <p class="mt-6 text-lg leading-relaxed text-justify md:text-base lg:text-lg indent-5 md:indent-10">
+            <h1 class="ml-0 text-4xl font-bold text-transparent transition-colors duration-300 md:ml-9 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">Nyantra</h1>
+            <p class="mt-6 ml-0 text-lg leading-relaxed text-justify md:ml-9 md:text-base lg:text-lg indent-5 md:indent-10">
                 Nyantra itu sendiri adalah gerakan melempar tombak yang awalnya horizontal ke vertikal, dan para penari harus menangkap ujung tombak dari masing-masingnya.
             </p>
         </div>

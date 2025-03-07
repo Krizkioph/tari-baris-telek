@@ -21,7 +21,7 @@
          <aside class="flex flex-col w-64 min-h-screen bg-gray-600">
             <div class="p-4 border-b border-gray-500">
 
-                <a href="/profile/ganti_password">
+                {{-- <a href="/profile"> --}}
                     <div class="flex items-center p-2 space-x-2 border border-black rounded-md">
                         <img src="{{Vite::asset('resources/images/logo-profile.png')}}" alt="User" class="w-8 h-8 rounded-full">
                         
@@ -29,7 +29,7 @@
                         <span class="text-xl font-bold hover:text-emas">{{Auth::user()->name}}</span>
                         @endauth
                     </div>
-                </a>
+                {{-- </a> --}}
 
                 <!-- Log Out Button -->
                 <div class="mt-3 ">

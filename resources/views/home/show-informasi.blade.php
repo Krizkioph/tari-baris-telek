@@ -3,8 +3,16 @@
 
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <x-button-kembali href="javascript:history.back()" class="mb-4">Kembali</x-button-kembali>
-        <!-- Image Section dengan Hover Effect -->
-        <div class="relative mt-5 overflow-hidden transition-all duration-500 border border-transparent shadow-2xl group rounded-2xl hover:shadow-xl hover:border-emas">
+        <div class="relative mt-5 overflow-hidden transition-all duration-500 border border-transparent rounded-lg shadow-2xl group hover:shadow-xl hover:border-emas">
+
+            <!-- Garis di pojok kiri atas -->
+            <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
+            <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
+            
+            <!-- Garis di pojok kanan bawah -->
+            <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
+            <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+
             <div class="absolute inset-0 z-10 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
             <img 
                 src="{{asset('galeri/'. $informasi->foto)}}" 
