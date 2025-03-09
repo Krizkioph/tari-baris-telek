@@ -11,7 +11,7 @@
 }
 
 .dropdown-content.open {
-    max-height: 200px; /* Adjust based on your content */
+    max-height: 200px; /* Sesuaikan dengan konten */
     opacity: 1;
 }
 

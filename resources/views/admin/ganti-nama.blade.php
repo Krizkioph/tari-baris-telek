@@ -11,7 +11,10 @@
                 
 
 
-                <x-forms.button>Simpan</x-forms.button>
+                <div class="flex gap-4 pb-4">
+                    <x-forms.button>Simpan</x-forms.button>
+                    <x-button-kembali href="javascript:history.back()">Batal</x-button-kembali>
+                </div>
             </x-forms.form>
         </div>
     </div>
