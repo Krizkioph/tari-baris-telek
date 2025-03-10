@@ -1,10 +1,7 @@
 <x-layout>
-    <div class="flex items-center justify-center min-h-[400px] sm:min-h-screen rounded-lg bg-white/5 duration-300 transition-all  group relative overflow-hidden">
-        <!-- Animated background effect -->
+    <div class="flex items-center justify-center min-h-[400px] sm:min-h-screen rounded-lg bg-white/5 duration-300 transition-all hover:border-emas border border-white/15 group relative overflow-hidden">
         
-        <!-- Decorative border elements -->
-        <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-emas to-transparent "></div>
-        <div class="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-emas to-transparent"></div>
+        <x-garis-pinggir/>
 
         <div class="relative z-10 w-full max-w-4xl p-6">
             <!-- Heading with decorative elements -->

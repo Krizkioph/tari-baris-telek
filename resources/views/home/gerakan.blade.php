@@ -1,13 +1,8 @@
 <x-layout>
 
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group">
-        <!-- Garis di pojok kiri atas  -->
-        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
-    
-        {{-- Garis di pojok kanan bawah  --}}
-        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
+        
+        <x-garis-pinggir/>
     
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
@@ -32,14 +27,8 @@
 
 
 
-    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group">
-        <!-- Garis pojok kiri atas -->
-        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
-        
-        {{-- Garis di pojok kanan bawah  --}}
-        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
+        <x-garis-pinggir/>
 
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
@@ -61,14 +50,9 @@
     </div>
 
     <!-- Div Kedua -->
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group">
-        <!-- Garis pojok kiri atas -->
-        <div class="absolute top-0 left-0 w-24 h-1 transition-all duration-500 origin-left bg-gradient-to-r from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute top-0 left-0 w-1 h-24 transition-all duration-500 origin-top bg-gradient-to-b from-emas to-transparent group-hover:h-32"></div>
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
         
-        {{-- Garis di pojok kanan bawah  --}}
-        <div class="absolute bottom-0 right-0 w-24 h-1 transition-all duration-500 origin-right bg-gradient-to-l from-emas to-transparent group-hover:w-32"></div>
-        <div class="absolute bottom-0 right-0 w-1 h-24 transition-all duration-500 origin-bottom bg-gradient-to-t from-emas to-transparent group-hover:h-32"></div>
+        <x-garis-pinggir/>
 
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
