@@ -16,14 +16,14 @@
         </div>
 
         <!-- Metadata dengan Ikon -->
-        <div class="flex flex-col items-start justify-between gap-3 mt-6 text-white/80 sm:flex-row sm:items-center">
+        <div class="flex flex-col items-start justify-between gap-3 mt-6 sm:flex-row sm:items-center">
             <div class="flex items-center space-x-2">
                 <div class="p-2 bg-blue-100 rounded-full">
                     <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                     </svg>
                 </div>
-                <p class="text-sm">Upload oleh <span class="font-semibold text-white/70">{{$informasi->admin->name}}</span></p>
+                <p class="text-sm">Upload oleh <span class="font-semibold ">{{$informasi->admin->name}}</span></p>
             </div>
             
             <div class="flex items-center space-x-2">
@@ -44,7 +44,7 @@
             </h1>
 
             <!-- Deskripsi dengan Typography Enhanced -->
-            <div class="space-y-6 font-serif text-lg leading-relaxed text-justify text-white/70">
+            <div class="space-y-6 font-serif text-lg leading-relaxed text-justify ">
                 {!! nl2br(e($informasi->deskripsi)) !!}
             </div>
         </article>

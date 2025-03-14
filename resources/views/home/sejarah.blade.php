@@ -62,7 +62,7 @@
                     @endforeach
     
                     <!-- Pagination berada di tengah grid -->
-                    <div class="flex col-span-1 mt-10 md:col-span-2 lg:col-span-3">
+                    <div class="flex justify-center col-span-1 mt-10 md:col-span-2 lg:col-span-3">
                         {{ $informasi->links() }}
                     </div>
     

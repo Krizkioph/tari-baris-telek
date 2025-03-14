@@ -18,7 +18,6 @@ class DatabaseSeeder extends Seeder
         $admin->name = 'Admin';
         $admin->email = 'admin@gmail.com';
         $admin->password = bcrypt('123456');
-        $admin->role = 'admin';
         $admin->save();
     }
 }
