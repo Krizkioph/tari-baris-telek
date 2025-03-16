@@ -8,7 +8,7 @@
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
             </p>
             
-            <div class="relative block w-full max-w-xs overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
+            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                 <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
                     alt="Penari" 
@@ -26,7 +26,7 @@
                     <div class="flex items-center gap-3">
                         <div class="p-2 rounded-full bg-emas/20">
                             <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4L4 8l3.5 3.5L12 10l4.5 1.5L20 8l-8-4zM4 8v8l8 4 8-4V8l-8-4-8 4z"/>
                             </svg>
                         </div>
                         <span class="font-medium text-white/90">Pakaian Putih, Celana Putih</span>
@@ -39,7 +39,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60">Bebuntilan, Lamak Geringsing, Putih dan Kuning awiran, Gelungan</p>
+                            <p class="text-sm text-white/60">Bebuntilan, Lamak Geringsing, Putih dan Kuning awiran, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -63,7 +63,7 @@
                 Petelek
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
             </p>
-            <div class="relative block w-full max-w-xs overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
+            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                 <img 
                     src="{{ Vite::asset('resources/images/petelek.png') }}" 
                     alt="Petelek" 
@@ -80,7 +80,7 @@
                     <div class="flex items-center gap-3">
                         <div class="p-2 rounded-full bg-emas/20">
                             <svg class="w-4 h-4 text-emas" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4L4 8l3.5 3.5L12 10l4.5 1.5L20 8l-8-4zM4 8v8l8 4 8-4V8l-8-4-8 4z"/>
                             </svg>
                         </div>
                         <span class="font-medium text-white/90">Pakaian Hitam, Celana Putih</span>
@@ -93,7 +93,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60">Simping, Bebuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan</p>
+                            <p class="text-sm text-white/60">Simping, Bebuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
