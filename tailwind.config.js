@@ -16,7 +16,7 @@ export default {
                 "hanken-grotest": ["Hanken Grotesk", "sans-serif"],
             },
             colors: {
-                black: "#060606",
+                hitam: "#060606",
                 abu: "#4D4B4B",
                 emas: "#F1C40F",
             },

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
-<body class="pb-8 text-white bg-black font-hanken-grotest">
+<body class="pb-8 text-white bg-hitam font-hanken-grotest">
   <div>
     <!-- Header Image -->
     <div class="relative hidden md:block">
@@ -22,7 +22,7 @@
 
     <!-- Mobile Menu Button -->
     <div class="flex items-center justify-between px-4 py-3 border-b-2 md:hidden border-abu">
-      <button id="mobile-menu-btn" class="text-white transition-colors hover:text-emas">
+      <button id="mobile-menu-btn" class="transition-colors hover:text-emas">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -42,7 +42,7 @@
       <div id="sidebar-content" class="w-64 h-full transition-transform duration-300 transform -translate-x-full bg-black">
         <div class="flex items-center justify-between p-4 border-b-2 border-abu">
           <span class="text-lg font-bold">Tari Baris Telek</span>
-          <button id="sidebar-close-btn" class="p-2 text-white hover:text-emas">
+          <button id="sidebar-close-btn" class="p-2 hover:text-emas">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <nav class="hidden text-white border-b-2 border-abu md:block">
+    <nav class="hidden border-b-2 border-abu md:block">
       <div class="flex items-center justify-between py-4">
         <!-- Navigasi Tengah -->
         <div class="flex justify-center flex-1">

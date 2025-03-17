@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 </head>
-<body class="text-white bg-black font-hanken-grotest">
+<body class="text-white bg-hitam font-hanken-grotest">
 
   <!-- Header Mobile (hanya tampil di mobile) -->
   <header class="flex items-center justify-between p-4 bg-gray-700 md:hidden">

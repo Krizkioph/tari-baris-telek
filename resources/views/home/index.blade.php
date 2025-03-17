@@ -5,9 +5,14 @@
             src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
             alt="Pura Dalem Kedewatan" 
             class="object-cover w-full h-56 p-1 transition-all duration-300 border border-transparent hover:border-emas rounded-xl md:w-1/2 md:h-72 lg:h-96 hover:-translate-y-1"
+            data-aos="fade-right"
+            data-aos-offset="200"
         >
     
-        <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start">
+        <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start"
+             data-aos="fade-left"
+             data-aos-delay="200"
+             data-aos-offset="200">
             <h1 class="mt-4 text-3xl font-bold text-center text-transparent sm:mt-0 md:text-3xl lg:text-4xl bg-clip-text from-emas bg-gradient-to-r to-white">Tari Baris Gede Télék</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
                 Tari Baris Gede Télék sebagai tarian sakral yang wajib dipentaskan ketika upacara piodalan Tilem Kajeng di Pura Dalem Kadewatan, disebut juga dengan I Kebo Dengkol (senapati) sebagai identitas religius masyarakat Desa Adat Sanur dalam penganut agama Hindu (Siwaistik).
@@ -25,13 +30,17 @@
                 <div class="grid grid-cols-1 gap-6 p-6 shadow-md md:grid-cols-2 lg:grid-cols-3 rounded-xl">
                     
                     @foreach ($informasi as $data)
-                    <x-informasi-card :data="$data"/>
+                    <x-informasi-card 
+                        :data="$data" 
+                        data-aos="fade-up" 
+                        data-aos-delay="{{ $loop->index * 150 }}" 
+                        data-aos-duration="700"
+                        data-aos-easing="ease-out-cubic"/>
                     @endforeach
     
                     <!-- More Button -->
                     <div class="flex justify-center mt-6 col-span-full md:mt-8">
                         <x-button-standar href="/sejarah">More</x-button-standar>
-                        
                     </div>
                 </div>
             </div>
@@ -43,7 +52,7 @@
         <x-page-heading>BUSANA</x-page-heading>
     
         <div class="flex flex-col items-center justify-center md:flex-row gap-y-8 md:gap-x-24 lg:gap-x-36">
-            <div class="text-center">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="800">
                 <a href="/busana" target="_blank">
                     <div class="relative block w-full max-w-xs overflow-hidden transition-all duration-300 border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                         <img 
@@ -58,11 +67,10 @@
                         <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
                     </div>
                 </a>
-                {{-- <p class="mt-2 text-3xl font-bold text-center text-transparent transition-colors duration-300 md:text-3xl lg:text-3xl bg-clip-text from-emas bg-gradient-to-r to-white">Penari</p> --}}
             </div>
     
             <!-- Container untuk Petelek -->
-            <div class="text-center">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                 <a href="/busana" target="_blank ">
                     <div class="relative block w-full max-w-xs overflow-hidden transition-all duration-300 border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                         <img 
@@ -77,7 +85,6 @@
                         <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
                     </div>
                 </a>
-                {{-- <p class="mt-2 text-3xl font-bold text-center text-transparent transition-colors duration-300 md:text-3xl lg:text-3xl bg-clip-text from-emas bg-gradient-to-r to-white">Petelek</p> --}}
             </div>
         </div>
     </div>
@@ -90,7 +97,10 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
-                    <a href="/galeri/{{$data->id}}" class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas">
+                    <a href="/galeri/{{$data->id}}" class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas"
+                       data-aos="zoom-in"
+                       data-aos-duration="600"
+                       data-aos-delay="{{ $loop->index * 100 }}">
                         <img 
                             src="{{ asset('galeri/' . $data->foto) }}" 
                             alt="{{ $data->deskripsi }}" 
@@ -110,7 +120,6 @@
             <!-- Pagination -->
             <div class="flex justify-center mt-6 col-span-full md:mt-8">
                 <x-button-standar href="/galeri">More</x-button-standar>
-                
             </div>
         </div>
     </div>

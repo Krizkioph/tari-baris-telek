@@ -1,6 +1,7 @@
 <x-layout>
-
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
+    
+    {{-- Container Pertama --}}
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto transition-all duration-500 border rounded-md mb-14 md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">
         
         <x-garis-pinggir/>
     
@@ -24,10 +25,10 @@
         </div>
     </div>
     
+    <br>
 
-
-
-    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
+    {{-- Container Kedua --}}
+    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
         <x-garis-pinggir/>
 
         <div class="w-full md:w-1/2 md:order-2">
@@ -49,8 +50,11 @@
         </div>
     </div>
 
-    <!-- Div Kedua -->
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas">
+
+    <br>
+
+    <!-- Container ketiga -->
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">
         
         <x-garis-pinggir/>
 

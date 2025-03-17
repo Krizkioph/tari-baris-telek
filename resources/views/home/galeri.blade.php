@@ -1,7 +1,10 @@
 <x-layout>
 
     <!-- Container untuk iframe YouTube -->
-    <div class="flex justify-center">
+    <div class="flex justify-center"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-offset="150">
         <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-xl">
             <iframe 
                 src="https://www.youtube.com/embed/exX3U_6zm38?si=b4NwTZjWR3tufC-n" 
@@ -22,7 +25,11 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
-                    <a href="/galeri/{{$data->id}}" class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas">
+                    <a href="/galeri/{{$data->id}}" 
+                       class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas"
+                       data-aos="zoom-in"
+                       data-aos-duration="600"
+                       data-aos-delay="{{ $loop->index * 100 }}">
                         <img 
                             src="{{ asset('galeri/' . $data->foto) }}" 
                             alt="{{ $data->deskripsi }}" 
@@ -39,7 +46,7 @@
                 @endforeach
             </div>
 
-            <!-- Pagination ditempatkan di luar grid dan diatur di tengah -->
+            <!-- Pagination -->
             <div class="w-full max-w-6xl px-4 mt-10">
                 <div class="flex justify-center">
                     {{ $galeri->links() }}

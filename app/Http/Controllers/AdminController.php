@@ -107,7 +107,7 @@ class AdminController extends Controller
     public function view_informasi()
     {
         return view('admin.view-informasi', [
-            'informasi' => Information::with('admin')->paginate(8),
+            'informasi' => Information::with('admin')->paginate(4),
         ]);
     }
 
@@ -233,7 +233,7 @@ class AdminController extends Controller
     public function view_galeri()
     {
         return view('admin.view-galeri', [
-            'galeri' => Galeri::with('admin')->paginate(8),
+            'galeri' => Galeri::with('admin')->paginate(4),
         ]);
     }
 
