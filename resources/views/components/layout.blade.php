@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-behavior: smooth;">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
     <!-- Header Image -->
     <div class="relative hidden md:block">
         <img src="{{ Vite::asset('resources/images/header-image.png') }}" alt="Tari Baris Telek" class="w-full h-24 " />
-        {{-- <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" class="absolute h-20 transform -translate-y-1/2 left-44 top-1/2" /> --}}
+        <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" class="absolute h-20 transform -translate-y-1/2 left-44 top-1/2" />
       </div>
       
 

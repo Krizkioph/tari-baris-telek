@@ -96,3 +96,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Scrolling Pagination
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Simpan posisi scroll saat pagination diklik
+    document.querySelectorAll("#pagination-container a").forEach((link) => {
+        link.addEventListener("click", function () {
+            sessionStorage.setItem("scrollPosition", window.scrollY);
+        });
+    });
+
+    // Kembalikan posisi scroll dengan smooth
+    const scrollPosition = sessionStorage.getItem("scrollPosition");
+    if (scrollPosition) {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+                top: parseInt(scrollPosition),
+                behavior: "smooth",
+            });
+        });
+        sessionStorage.removeItem("scrollPosition");
+    }
+});

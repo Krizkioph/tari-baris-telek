@@ -47,7 +47,7 @@
             </div>
 
             <!-- Pagination -->
-            <div class="w-full max-w-6xl px-4 mt-10">
+            <div class="w-full max-w-6xl px-4 mt-10" id="pagination-container">
                 <div class="flex justify-center">
                     {{ $galeri->links() }}
                 </div>

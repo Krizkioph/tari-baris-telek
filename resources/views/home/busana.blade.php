@@ -3,12 +3,18 @@
         
         <!-- Container untuk Penari -->
         <div class="text-center">
-            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl">
+            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+            >
                 Penari
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
             </p>
             
-            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
+            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+            >
                 <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
                     alt="Penari" 
@@ -21,7 +27,7 @@
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
             </div>
 
-            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left transition-all duration-300 border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">
+            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left transition-all duration-300 border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
                 <div class="space-y-3">
                     <div class="flex items-center gap-3">
                         <div class="p-2 rounded-full bg-emas/20">
@@ -59,11 +65,17 @@
 
         <!-- Container untuk Petelek -->
         <div class="text-center">
-            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl">
+            <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+            >
                 Petelek
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
             </p>
-            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
+            <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+            >
                 <img 
                     src="{{ Vite::asset('resources/images/petelek.png') }}" 
                     alt="Petelek" 
@@ -75,7 +87,7 @@
                 >
                 <div class="absolute inset-0 transition-all rounded-lg opacity-0 duration-400 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
             </div>
-            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
+            <div class="h-56 max-w-xs p-6 mt-4 space-y-4 text-left border rounded-lg md:max-w-64 lg:max-w-72 bg-white/5 border-white/15 hover:border-emas md:h-64 lg:h-64" data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">
                 <div class="space-y-3">
                     <div class="flex items-center gap-3">
                         <div class="p-2 rounded-full bg-emas/20">

@@ -1,11 +1,11 @@
 <x-layout>
     
     {{-- Container Pertama --}}
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto transition-all duration-500 border rounded-md mb-14 md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto transition-all duration-500 border rounded-md mb-14 md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
         
         <x-garis-pinggir/>
     
-        <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
+        <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">  
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
                 src="https://www.youtube.com/embed/FbRkhY1fWsw?si=Vftm9Qr8DMRAjogQ" 
@@ -28,13 +28,13 @@
     <br>
 
     {{-- Container Kedua --}}
-    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
+    <div class="relative flex flex-col items-center px-4 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:flex-row max-w-7xl md:px-8 lg:px-12 md:mb-16 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">
         <x-garis-pinggir/>
 
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
                 class="w-full h-48 mb-4 border md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl border-white/15" 
-                src="https://www.youtube.com/embed/qVpJOwzObhE?si=R9pKQngmtGtNmPu2" 
+                src="https://www.youtube.com/embed/TvpLqfOKpxw?si=QEy4SUEp7vqCwTBM" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -54,7 +54,7 @@
     <br>
 
     <!-- Container ketiga -->
-    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">
+    <div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto mb-12 transition-all duration-500 border rounded-md md:mb-16 max-w-7xl md:flex-row md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
         
         <x-garis-pinggir/>
 
