@@ -11,17 +11,11 @@
 }
 
 .dropdown-content.open {
-    max-height: 200px; /* Sesuaikan dengan konten */
+    max-height: 200px;
     opacity: 1;
 }
 
-.toggle-dropdown::after {
-    content: "▼";
-    float: right;
-    transition: transform 0.3s ease;
-}
-
-.toggle-dropdown.open::after {
+.toggle-dropdown.open svg {
     transform: rotate(180deg);
 }
 

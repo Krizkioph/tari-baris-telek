@@ -6,6 +6,7 @@
             <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl"
                 data-aos="zoom-in"
                 data-aos-offset="200"
+                data-aos-delay="300"
             >
                 Penari
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
@@ -14,6 +15,7 @@
             <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas"
                 data-aos="zoom-in"
                 data-aos-offset="200"
+                data-aos-delay="300"
             >
                 <img 
                     src="{{ Vite::asset('resources/images/penari.png') }}" 
@@ -68,6 +70,7 @@
             <p class="relative mb-2 text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-emas to-white md:text-3xl lg:text-4xl"
                 data-aos="zoom-in"
                 data-aos-offset="200"
+                data-aos-delay="300"
             >
                 Petelek
                 <span class="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-2 left-1/2 bg-gradient-to-r from-emas to-white"></span>
@@ -75,6 +78,7 @@
             <div class="relative block w-full max-w-xs mt-6 overflow-hidden transition-all border rounded-lg duration-400 group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas"
                 data-aos="zoom-in"
                 data-aos-offset="200"
+                data-aos-delay="300"
             >
                 <img 
                     src="{{ Vite::asset('resources/images/petelek.png') }}" 

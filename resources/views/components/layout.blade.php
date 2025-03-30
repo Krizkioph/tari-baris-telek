@@ -11,12 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
-<body class="pb-8 text-white bg-hitam font-hanken-grotest">
+<body class="min-h-screen pb-10 text-white bg-hitam font-hanken-grotesk">
   <div>
     <!-- Header Image -->
     <div class="relative hidden md:block">
         <img src="{{ Vite::asset('resources/images/header-image.png') }}" alt="Tari Baris Telek" class="w-full h-24 " />
-        <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" class="absolute h-20 transform -translate-y-1/2 left-44 top-1/2" />
+        <a href="/login">
+          <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" class="absolute h-20 transform -translate-y-1/2 left-44 top-1/2" />
+        </a>
       </div>
       
 
@@ -29,7 +31,7 @@
       </button>
 
       <div class="flex items-center">
-        <a href="/">
+        <a href="/login">
           <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Tari Baris Telek" class="object-contain w-12 h-12" />
         </a>
       </div>
@@ -80,9 +82,13 @@
     </nav>
   </div>
 
-  <main class="mt-10 md:mt-20 max-w-[986px] mx-auto">
+  <main class="mt-8 md:mt-12 max-w-[986px] mx-auto  flex-grow">
     {{ $slot }}
   </main>
 
+
+  {{-- <footer class="block p-4 text-center border-t-2 mt-14 bg-hitam border-abu"> <!-- Tambahkan mt-auto -->
+    <p>@copyright By asdas</p> 
+  </footer> --}}
 </body>
 </html>

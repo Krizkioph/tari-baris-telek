@@ -29,7 +29,7 @@
                     </div>
                     <div>
                         <h3 class="mb-2 text-sm font-semibold text-red-300">NARASUMBER 2</h3>
-                        <p class="text-lg font-medium ">Kadek Sumariyasa</p>
+                        <p class="text-lg font-medium ">I Kadek Sumariyasa, S.Sn</p>
                     </div>
                 </div>
             </div>

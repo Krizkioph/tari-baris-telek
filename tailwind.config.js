@@ -13,7 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                "hanken-grotest": ["Hanken Grotesk", "sans-serif"],
+                "hanken-grotesk": ["Hanken Grotesk", "sans-serif"],
             },
             colors: {
                 hitam: "#060606",
