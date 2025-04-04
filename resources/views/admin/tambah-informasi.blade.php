@@ -9,7 +9,7 @@
                 <x-forms.error name="judul" />
                 <x-forms.textarea name="deskripsi" label="Deskripsi" type="text"  placeholder="...." required/>
                 <x-forms.error name="deskripsi" />
-                <x-forms.input name="foto" label="Gambar" type="file" required/>
+                <x-forms.input name="foto" label="Gambar (Maks 4mb)" type="file" required/>
                 <x-forms.error name="foto" />
                             
                 <x-forms.button>Simpan</x-forms.button>

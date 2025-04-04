@@ -8,7 +8,7 @@
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">  
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
-                src="https://www.youtube.com/embed/FbRkhY1fWsw?si=Vftm9Qr8DMRAjogQ" 
+                src="https://www.youtube.com/embed/nNu3lNJAfYM?si=WA4KF1NqQBpH3yKE" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

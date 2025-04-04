@@ -122,7 +122,7 @@ class AdminController extends Controller
         $request->validate([
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4048',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
@@ -249,7 +249,7 @@ class AdminController extends Controller
         // Validasi input
         $request->validate([
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4048',
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',

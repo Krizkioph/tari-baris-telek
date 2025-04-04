@@ -34,7 +34,7 @@
 
     <!-- Makna Section -->
     <div class="max-w-4xl px-4 mx-auto mb-20 md:mb-28">
-        <x-page-heading>MAKNA</x-page-heading>
+        <x-page-heading>MAKNA & PERAN</x-page-heading>
         <div class="relative p-6 mt-8 transition-all duration-300 border bg-white/5 rounded-xl border-white/15 hover:-translate-y-1 group hover:border-emas"
              data-aos="fade-up"
              data-aos-duration="800"
