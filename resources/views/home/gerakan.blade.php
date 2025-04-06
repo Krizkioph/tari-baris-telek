@@ -8,7 +8,7 @@
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">  
             <iframe 
                 class="w-full h-full border rounded-xl border-white/15" 
-                src="https://www.youtube.com/embed/nNu3lNJAfYM?si=WA4KF1NqQBpH3yKE" 
+                src="https://www.youtube.com/embed/ex0xafjZ4zs?si=BKri9CchsgeritFc" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -34,7 +34,7 @@
         <div class="w-full md:w-1/2 md:order-2">
             <iframe 
                 class="w-full h-48 mb-4 border md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl border-white/15" 
-                src="https://www.youtube.com/embed/TvpLqfOKpxw?si=QEy4SUEp7vqCwTBM" 
+                src="https://www.youtube.com/embed/WGNrU4uU7xg?si=MojElv6vISU6GVd6" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -61,7 +61,7 @@
         <div class="w-full h-64 md:w-1/2 md:h-80 lg:h-96">
             <iframe 
                 class="w-full h-full border shadow-lg rounded-xl border-white/15" 
-                src="https://www.youtube.com/embed/gFJEtwBsiSk?si=0Nhqye15MKG8icaa" 
+                src="https://www.youtube.com/embed/8W5d0VBAqac?si=q9k4I99zT_r-g1-d" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

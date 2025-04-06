@@ -15,11 +15,8 @@
   <div>
     <!-- Header Image -->
     <div class="relative hidden md:block">
-        <img src="{{ Vite::asset('resources/images/header-image.png') }}" alt="Tari Baris Telek" class="w-full h-24 " />
-        <a href="/login">
-          <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" class="absolute h-20 transform -translate-y-1/2 left-44 top-1/2" />
-        </a>
-      </div>
+      <img src="{{ Vite::asset('resources/images/header-image.png') }}" alt="Tari Baris Telek" class="w-full h-24 " />
+    </div>
       
 
     <!-- Mobile Menu Button -->
@@ -43,7 +40,7 @@
       <!-- Sidebar content, akan di-slide dari kiri -->
       <div id="sidebar-content" class="w-64 h-full transition-transform duration-300 transform -translate-x-full bg-black">
         <div class="flex items-center justify-between p-4 border-b-2 border-abu">
-          <span class="text-lg font-bold">Tari Baris Telek</span>
+          <span class="text-lg font-bold">Tari Baris Gede Télék</span>
           <button id="sidebar-close-btn" class="p-2 hover:text-emas">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -68,14 +65,34 @@
       <div class="flex items-center justify-between py-4">
         <!-- Navigasi Tengah -->
         <div class="flex justify-center flex-1">
-          <ul class="flex justify-center space-x-10 text-md">
-            <li><a href="/" class="hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
-            <li><a href="/sejarah" class="hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
-            <li><a href="/busana" class="hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>
-            <li><a href="/gerakan" class="hover:text-emas {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a></li>
-            <li><a href="/galeri" class="hover:text-emas {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a></li>
-            <li><a href="/tentang" class="hover:text-emas {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a></li>
-            <li><a href="/lokasi" class="hover:text-emas {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a></li>
+          <ul class="flex items-center justify-center space-x-10 text-md"> <!-- Tambahkan items-center di sini -->
+            <li class="flex items-center h-8"> <!-- Tambahkan class height dan flex -->
+              <a href="/login" class="flex items-center h-full">
+                <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" 
+                     class="transition-transform duration-300 h-9 hover:scale-110" />
+              </a>
+            </li>
+            <li class="flex items-center h-9"><!-- Tambahkan class height dan flex -->
+              <a href="/" class="hover:text-emas h-full flex items-center {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/sejarah" class="hover:text-emas h-full flex items-center {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/busana" class="hover:text-emas h-full flex items-center {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/gerakan" class="hover:text-emas h-full flex items-center {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/galeri" class="hover:text-emas h-full flex items-center {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/tentang" class="hover:text-emas h-full flex items-center {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a>
+            </li>
+            <li class="flex items-center h-9">
+              <a href="/lokasi" class="hover:text-emas h-full flex items-center {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a>
+            </li>
           </ul>
         </div>
       </div>

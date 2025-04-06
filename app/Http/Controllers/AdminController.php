@@ -170,7 +170,7 @@ class AdminController extends Controller
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif,svg, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
@@ -253,7 +253,7 @@ class AdminController extends Controller
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, svg, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
@@ -295,7 +295,7 @@ class AdminController extends Controller
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, svg, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 

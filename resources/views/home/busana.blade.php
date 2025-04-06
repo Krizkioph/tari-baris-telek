@@ -18,7 +18,7 @@
                 data-aos-delay="300"
             >
                 <img 
-                    src="{{ Vite::asset('resources/images/penari.png') }}" 
+                    src="{{ Vite::asset('resources/images/penari2.png') }}" 
                     alt="Penari" 
                     class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                     filter brightness-95 group-hover:brightness-100 
@@ -47,7 +47,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60">Bebuntilan, Lamak Geringsing, Putih dan Kuning awiran, Gelungan berhiaskan bunga gumitir</p>
+                            <p class="text-sm text-white/60">Lamak Geringsing, Putih dan Kuning awiran, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -81,7 +81,7 @@
                 data-aos-delay="300"
             >
                 <img 
-                    src="{{ Vite::asset('resources/images/petelek.png') }}" 
+                    src="{{ Vite::asset('resources/images/petelek2.png') }}" 
                     alt="Petelek" 
                     class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                         filter brightness-95 group-hover:brightness-100 
@@ -109,7 +109,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60">Simping, Bebuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan berhiaskan bunga gumitir</p>
+                            <p class="text-sm text-white/60"> Babuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">

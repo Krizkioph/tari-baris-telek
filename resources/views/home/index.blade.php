@@ -16,7 +16,7 @@
              data-aos-offset="200">
             <h1 class="mt-4 text-3xl font-bold text-center text-transparent sm:mt-0 md:text-3xl lg:text-4xl bg-clip-text from-emas bg-gradient-to-r to-white">Tari Baris Gede Télék</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
-                Tari Baris Gede Télék sebagai tarian sakral yang wajib dipentaskan ketika upacara piodalan Tilem Kajeng di Pura Dalem Kadewatan, disebut juga dengan I Kebo Dengkol (senapati) sebagai identitas religius masyarakat Desa Adat Sanur dalam penganut agama Hindu (Siwaistik).
+                Tari Baris Gede Télék sebagai tarian sakral yang wajib dipentaskan ketika upacara piodalan Tilem Kajeng di Pura Dalem Kadewatan, disebut juga dengan I Kebo Dengkol sebagai identitas religius masyarakat Desa Adat Sanur dalam penganut agama Hindu (Siwaistik).
             </p>
         </div>
     </div>
