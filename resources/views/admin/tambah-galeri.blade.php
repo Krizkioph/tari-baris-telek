@@ -1,6 +1,6 @@
 <x-admin-layout>
 
-    <div class="">
+    <div class="pb-10">
         <x-page-heading>Tambah Foto</x-page-heading>
         <div class="">
             <x-forms.form method="POST" action="/dashboard/store_galeri" enctype="multipart/form-data">

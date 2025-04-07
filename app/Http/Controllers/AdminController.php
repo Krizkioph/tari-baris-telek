@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use App\Models\Galeri;
+use App\Models\Gerakan;
 use App\Models\Information;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -237,7 +238,6 @@ class AdminController extends Controller
         ]);
     }
 
-
     public function tambah_galeri()
     {
 
@@ -347,4 +347,91 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
+
+
+    // =================================================================================
+    // ===============================  Gerakan ====================================
+    // =================================================================================
+
+
+    public function view_gerakan()
+    {
+        return view('admin.view-gerakan', [
+            'gerakan' => Gerakan::with('admin')->get(),
+        ]);
+    }
+
+
+    public function tambah_gerakan()
+    {
+        abort(403, 'Halaman ini sedang dinonaktifkan.');
+    }
+
+
+    public function store_gerakan(Request $request)
+    {
+        // Validasi input
+        $request->validate([
+            'judul' => 'required|string',
+            'deskripsi' => 'required|string',
+            'link' => ['required', 'string', 'regex:/^(https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]+(\?[a-zA-Z0-9=_\-&%]*)?)$/'],
+        ], [
+            'judul.required' => 'Judul wajib diisi.',
+            'deskripsi.required' => 'Deskripsi wajib diisi.',
+            'link.required' => 'Link wajib diisi.',
+            'link.regex' => 'Link harus berupa embed YouTube yang valid, contoh: https://www.youtube.com/embed/ID_VIDEO',
+        ]);
+
+        // Simpan data ke database
+        $data = new Gerakan();
+        $data->judul = $request->judul;
+        $data->deskripsi = $request->deskripsi;
+        $data->link = $request->link;
+        $data->admin_id = Auth::id();
+
+        $data->save();
+
+        toastr()->success('Link Youtube berhasil ditambahkan ke Gerakan.');
+
+
+        return redirect()->back();
+    }
+
+    public function edit_gerakan($id)
+    {
+        return view('admin.edit-gerakan', [
+            'data' => Gerakan::find($id)
+        ]);
+    }
+
+    public function update_gerakan(Request $request, $id)
+    {
+        // Validasi input
+        $request->validate([
+            'judul' => 'required|string',
+            'deskripsi' => 'required|string',
+            'link' => ['required', 'string', 'regex:/^(https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]+(\?[a-zA-Z0-9=_\-&%]*)?)$/'],
+        ], [
+            'judul.required' => 'Judul wajib diisi.',
+            'deskripsi.required' => 'Deskripsi wajib diisi.',
+            'link.required' => 'Link wajib diisi.',
+            'link.regex' => 'Link harus berupa embed YouTube yang valid, contoh: https://www.youtube.com/embed/ID_VIDEO',
+        ]);
+
+        // Simpan data ke database
+        $data = Gerakan::find($id);
+        $data->judul = $request->judul;
+        $data->deskripsi = $request->deskripsi;
+        $data->link = $request->link;
+        $data->admin_id = Auth::id();
+
+        $data->save();
+
+        toastr()->success('Gerakan berhasil diupdate.');
+
+        return redirect()->route('view_gerakan');
+    }
+
+
+
 }

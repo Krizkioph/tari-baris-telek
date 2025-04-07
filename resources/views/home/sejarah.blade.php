@@ -63,7 +63,6 @@
                     @foreach ($informasi as $data)
                         <x-informasi-card 
                             :data="$data"
-                            :data="$data" 
                             data-aos="fade-up" 
                             data-aos-delay="{{ $loop->index * 150 }}" 
                             data-aos-duration="700"

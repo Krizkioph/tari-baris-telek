@@ -9,5 +9,5 @@
 @endphp
 
 <x-forms.field :$label :$name>
-    <textarea {{ $attributes($defaults) }}>{{ $value }}</textarea>
+    <textarea {{ $attributes($defaults) }}>{{ old($name, $value) }}</textarea>
 </x-forms.field>

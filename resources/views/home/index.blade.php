@@ -1,14 +1,20 @@
 <x-layout>
     {{-- Sejarah --}}
     <div class="flex flex-col items-center justify-center px-6 mx-auto max-w-7xl md:flex-row md:items-center md:space-x-8 lg:px-12 ">
-        <img 
-            src="{{ Vite::asset('resources/images/pura-dalem-kedewatan.jpg') }}" 
-            alt="Pura Dalem Kedewatan" 
-            class="object-cover w-full h-56 p-1 transition-all duration-300 border border-transparent hover:border-emas rounded-xl md:w-1/2 md:h-72 lg:h-96 hover:-translate-y-1"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="100"
-        >
+        <div class="w-full h-56 p-1 transition-all duration-300 border border-transparent hover:border-emas rounded-xl md:w-1/2 md:h-72 lg:h-96 hover:-translate-y-1"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="100">
+            <iframe 
+                src="https://www.youtube.com/embed/8W5d0VBAqac?si=q9k4I99zT_r-g1-d" 
+                class="w-full h-full rounded-xl"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>      
     
         <div class="flex flex-col items-center justify-center md:w-1/2 lg:items-start"
              data-aos="fade-left"

@@ -47,7 +47,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60">Lamak Geringsing, Putih dan Kuning awiran, Gelungan berhiaskan bunga gumitir</p>
+                            <p class="text-sm text-white/60">Bebuntilan, Lamak Geringsing, Putih dan Kuning awiran, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -109,7 +109,7 @@
                         </div>
                         <div>
                             <span class="font-medium text-white/90">Aksesoris</span>
-                            <p class="text-sm text-white/60"> Babuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan berhiaskan bunga gumitir</p>
+                            <p class="text-sm text-white/60">Sesimping, Bebuntilan, Putih dan Kuning awiran, Lamak geringsing, Gelungan berhiaskan bunga gumitir</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">

@@ -42,7 +42,6 @@
       <!-- Konten Sidebar -->
       <div class="p-4">
         
-        
         <!-- Navigation -->
         <nav class="space-y-2">
           <a href="/dashboard" class="block p-2 text-lg bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">Dashboard</a>
@@ -72,6 +71,20 @@
             <div id="galeri-dropdown-mobile" class="ml-2 space-y-2 dropdown-content">
               <a href="/dashboard/tambah_galeri" class="{{ request()->routeIs('tambah_galeri') ? 'text-emas font-bold' : '' }} block p-2 mt-2 bg-gray-700 rounded text-lg hover:bg-gray-500 hover:text-emas">Tambah Galeri</a>
               <a href="/dashboard/view_galeri" class=" {{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 text-lg hover:text-emas">View Galeri</a>
+            </div>
+          </div>
+
+          <!-- Dropdown Gerakan -->
+          <div class="relative">
+            <button class="flex items-center justify-between w-full p-2 text-lg text-left bg-gray-500 rounded hover:bg-gray-400 toggle-dropdown" data-target="gerakan-dropdown-mobile">
+              <span>Gerakan</span>
+              <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <div id="gerakan-dropdown-mobile" class="ml-2 space-y-2 dropdown-content">
+              <a href="/dashboard/tambah_gerakan" class="hidden {{ request()->routeIs('tambah_gerakan') ? 'text-emas font-bold' : '' }} block p-2 mt-2 bg-gray-700 rounded text-lg hover:bg-gray-500 hover:text-emas">Tambah Gerakan</a>
+              <a href="/dashboard/view_gerakan" class=" {{ request()->routeIs('view_gerakan') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 text-lg hover:text-emas">View Gerakan</a>
             </div>
           </div>
         </nav>
@@ -108,6 +121,7 @@
             <a href="/dashboard/view_informasi" class="block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas {{ request()->routeIs('view_informasi') ? 'text-emas font-bold' : '' }}">View Informasi</a>
           </div>
         </div>
+        
         <div class="relative">
           <button class="flex items-center justify-between w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 toggle-dropdown" data-target="galeri-dropdown">
             <span>Galeri</span>
@@ -120,13 +134,26 @@
             <a href="/dashboard/view_galeri" class="{{ request()->routeIs('view_galeri') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Galeri</a>
           </div>
         </div>
+
+        <div class="relative">
+          <button class="flex items-center justify-between w-full p-2 text-left bg-gray-500 rounded hover:bg-gray-400 toggle-dropdown" data-target="gerakan-dropdown">
+            <span>Gerakan</span>
+            <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+          <div id="gerakan-dropdown" class="ml-2 space-y-2 dropdown-content">
+            <a href="/dashboard/tambah_gerakan" class="hidden p-2 mt-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas {{ request()->routeIs('tambah_gerakan') ? 'text-emas font-bold' : '' }}">Tambah Gerakan</a>
+            <a href="/dashboard/view_gerakan" class="{{ request()->routeIs('view_gerakan') ? 'text-emas font-bold' : '' }} block p-2 bg-gray-700 rounded hover:bg-gray-500 hover:text-emas">View Gerakan</a>
+          </div>
+        </div>
       </nav>
     </aside>
   
     <!-- Main Container -->
     <div class="flex flex-col flex-1">
       <!-- Top Navbar -->
-      <nav class="top-0 z-10 p-4 bg-gray-600 border-l-2 border-gray-700 shadow-md  md:pr-8">
+      <nav class="top-0 z-10 p-4 bg-gray-600 border-l-2 border-gray-700 shadow-md md:pr-8">
         <div class="flex justify-between md:justify-end">
           <button id="mobile-menu-btn" class="block text-white focus:outline-none md:hidden">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

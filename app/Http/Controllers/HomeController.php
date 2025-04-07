@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Galeri;
+use App\Models\Gerakan;
 use App\Models\Information;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,9 @@ class HomeController extends Controller
 
     public function gerakan()
     {
-        return view('home.gerakan');
+        return view('home.gerakan', [
+            'gerakan' => Gerakan::oldest()->get()
+        ]);
     }
 
     public function galeri()
