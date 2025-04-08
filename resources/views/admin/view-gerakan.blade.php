@@ -1,5 +1,5 @@
 <x-admin-layout>
-    <div>
+    <div class="pb-10">
         <div class="overflow-x-auto rounded-lg shadow-lg bg-white/5">
             <table class="w-full border-collapse">
                 <thead class="text-center">
@@ -8,7 +8,7 @@
                         <th class="px-6 py-3 border-b border-gray-700">Judul</th>
                         <th class="px-6 py-3 border-b border-gray-700">Deskripsi</th>
                         <th class="px-6 py-3 border-b border-gray-700">Diupload Oleh</th>
-                        <th class="px-6 py-3 border-b border-gray-700">Diupload Pada</th>
+                        <th class="px-6 py-3 border-b border-gray-700">Diupdate Pada</th>
                         <th class="px-6 py-3 border-b border-gray-700">Link Embed Youtube</th>
                         <th class="px-6 py-3 border-b border-gray-700">Aksi</th>
                     </tr>
@@ -20,7 +20,7 @@
                             <td class="px-6 py-4">{{ $data->judul }}</td>
                             <td class="px-6 py-4">{{ $data->deskripsi }}</td>
                             <td class="px-6 py-4">{{ $data->admin->name }}</td>
-                            <td class="px-6 py-4">{{ $data->created_at->diffForHumans() }}</td>
+                            <td class="px-6 py-4">{{ $data->updated_at->diffForHumans() }}</td>
                             <td class="px-6 py-4">{{ $data->link }}</td>
                             <td class="flex gap-2 px-6 py-10 ">
                                 <a href="/dashboard/edit_gerakan/{{$data->id}}" class="px-5 py-3 text-sm font-medium text-white transition bg-blue-500 rounded-lg hover:bg-blue-700">Edit</a>

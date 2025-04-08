@@ -1,7 +1,7 @@
 @props(['data', 'index'])
 
-<div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto transition-all duration-500 border rounded-md mb-14 md:mb-16 max-w-7xl md:flex-row {{ $index === 1 ? 'md:flex-row-reverse' : '' }} md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas"
-    data-aos="{{ $index === 1 ? 'fade-left' : 'fade-right' }}"
+<div class="relative flex flex-col items-center justify-center px-6 py-6 mx-auto transition-all duration-500 border rounded-md mb-14 md:mb-16 max-w-7xl md:flex-row {{ $index % 2 === 1 ? 'md:flex-row-reverse' : '' }} md:items-center lg:px-12 border-white/15 hover:-translate-y-1 bg-white/5 group hover:border-emas"
+    data-aos="{{ $index % 2 === 1 ? 'fade-left' : 'fade-right' }}"
     data-aos-duration="600"
     data-aos-delay="300"
 >

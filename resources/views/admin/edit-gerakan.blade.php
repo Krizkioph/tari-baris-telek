@@ -10,7 +10,7 @@
                 <x-forms.error name="judul" />
                 <x-forms.textarea name="deskripsi" type='text' label="Deskripsi" value="{{ $data->deskripsi }}" required />
                 <x-forms.error name="deskripsi" />
-                <x-forms.input name="link" label="Link" type='text' value="{{ $data->link }}" required />
+                <x-forms.input name="link" label="Link (Hanya Satu Link Youtube)" type='text' value="{{ $data->link }}" required />
                 <x-forms.error name="link" />
                             
                 <div class="flex gap-4 pb-4">

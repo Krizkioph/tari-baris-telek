@@ -8,7 +8,7 @@ use App\Models\Gerakan;
 use App\Models\Information;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
@@ -53,7 +53,7 @@ class AdminController extends Controller
 
         toastr()->success('Nama berhasil diperbarui.');
 
-        return redirect()->back();
+        return redirect()->route('profile');
     }
 
 
@@ -123,12 +123,12 @@ class AdminController extends Controller
         $request->validate([
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:4048',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
@@ -166,12 +166,12 @@ class AdminController extends Controller
         $request->validate([
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp,svg|max:4048',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:4048',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
@@ -249,13 +249,14 @@ class AdminController extends Controller
         // Validasi input
         $request->validate([
             'deskripsi' => 'required|string',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:4048',
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
+
 
         // Simpan data ke database
         $data = new galeri();
@@ -291,11 +292,11 @@ class AdminController extends Controller
         // Validasi input
         $request->validate([
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4048',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:4048',
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
-            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, gif, webp.',
+            'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
             'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
         ]);
 
@@ -364,35 +365,65 @@ class AdminController extends Controller
 
     public function tambah_gerakan()
     {
-        abort(403, 'Halaman ini sedang dinonaktifkan.');
+        return view('admin.tambah-gerakan');
+        // abort(403, 'Halaman ini sedang dinonaktifkan.');
     }
 
+    // Fungsi bantu untuk konversi link YouTube ke embed
+    private function convertYoutubeToEmbed($url)
+    {
+        $videoId = null;
+        $patterns = [
+            '/v=([a-zA-Z0-9_-]+)/i',
+            '/youtu\.be\/([a-zA-Z0-9_-]+)/i',
+            '/embed\/([a-zA-Z0-9_-]+)/i'
+        ];
+
+        foreach ($patterns as $pattern) {
+            if (preg_match($pattern, $url, $matches)) {
+                $videoId = $matches[1];
+                break;
+            }
+        }
+
+        return $videoId ? 'https://www.youtube.com/embed/' . $videoId : null;
+    }
 
     public function store_gerakan(Request $request)
     {
-        // Validasi input
-        $request->validate([
+        // Validasi
+        $validator = Validator::make($request->all(), [
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'link' => ['required', 'string', 'regex:/^(https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]+(\?[a-zA-Z0-9=_\-&%]*)?)$/'],
+            'link' => 'required|url',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'link.required' => 'Link wajib diisi.',
-            'link.regex' => 'Link harus berupa embed YouTube yang valid, contoh: https://www.youtube.com/embed/ID_VIDEO',
+            'link.url' => 'Link harus berupa URL yang valid.'
         ]);
+
+        // Konversi link YouTube menjadi embed
+        $embedLink = $this->convertYoutubeToEmbed($request->link);
+
+        if (!$embedLink) {
+            // Tambahkan error manual ke validator
+            $validator->errors()->add('link', 'Link YouTube tidak valid. Pastikan link benar.');
+
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
 
         // Simpan data ke database
         $data = new Gerakan();
         $data->judul = $request->judul;
         $data->deskripsi = $request->deskripsi;
-        $data->link = $request->link;
+        $data->link = $embedLink;
         $data->admin_id = Auth::id();
-
         $data->save();
 
         toastr()->success('Link Youtube berhasil ditambahkan ke Gerakan.');
-
 
         return redirect()->back();
     }
@@ -406,32 +437,40 @@ class AdminController extends Controller
 
     public function update_gerakan(Request $request, $id)
     {
-        // Validasi input
-        $request->validate([
+        // Buat validator manual
+        $validator = Validator::make($request->all(), [
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'link' => ['required', 'string', 'regex:/^(https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]+(\?[a-zA-Z0-9=_\-&%]*)?)$/'],
+            'link' => 'required|url',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'link.required' => 'Link wajib diisi.',
-            'link.regex' => 'Link harus berupa embed YouTube yang valid, contoh: https://www.youtube.com/embed/ID_VIDEO',
+            'link.url' => 'Link harus berupa URL yang valid.'
         ]);
+
+        // Konversi link YouTube menjadi embed
+        $embedLink = $this->convertYoutubeToEmbed($request->link);
+
+        if (!$embedLink) {
+            // Tambahkan error manual ke validator
+            $validator->errors()->add('link', 'Link YouTube tidak valid. Pastikan link benar.');
+
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
 
         // Simpan data ke database
         $data = Gerakan::find($id);
         $data->judul = $request->judul;
         $data->deskripsi = $request->deskripsi;
-        $data->link = $request->link;
+        $data->link = $embedLink;
         $data->admin_id = Auth::id();
-
         $data->save();
 
         toastr()->success('Gerakan berhasil diupdate.');
 
         return redirect()->route('view_gerakan');
     }
-
-
-
 }

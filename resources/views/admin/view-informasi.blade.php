@@ -1,5 +1,5 @@
 <x-admin-layout>
-    <div>
+    <div class="pb-10">
         <div class="overflow-x-auto rounded-lg shadow-lg bg-white/5">
             <table class="w-full border-collapse">
                 <thead class="text-center">
@@ -15,7 +15,7 @@
                 <tbody class="divide-y divide-gray-700">
                     @foreach ($informasi as $info)
                         <tr class="transition hover:bg-gray-800">
-                            <td class="px-6 py-4">{{ $loop->iteration }}</td>
+                            <td class="px-6 py-4">{{ ($informasi->currentPage() - 1) * $informasi->perPage() + $loop->iteration }}</td>
                             <td class="px-6 py-4">{{ $info->judul }}</td>
                             <td class="px-6 py-4 text-justify">
                                 {{ Str::words($info->deskripsi, 20, '...') }}
