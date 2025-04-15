@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="{{ Vite::asset('resources/images/logo.png') }}" type="image/png">
+  <link rel="icon" href="{{ Vite::asset('resources/images/logo.webp') }}" type="image/webp">
   <title>Tari Baris Télék</title>
   @vite(['resources/css/app.css','resources/js/app.js'])
 
@@ -15,7 +15,7 @@
   <div>
     <!-- Header Image -->
     <div class="relative hidden md:block">
-      <img src="{{ Vite::asset('resources/images/header-image.png') }}" alt="Tari Baris Telek" class="w-full h-24 " />
+      <img src="{{ Vite::asset('resources/images/header-image.webp') }}" alt="Tari Baris Telek" class="w-full h-24 " />
     </div>
       
 
@@ -29,7 +29,7 @@
 
       <div class="flex items-center">
         <a href="/login">
-          <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Tari Baris Telek" class="object-contain w-12 h-12" />
+          <img src="{{ Vite::asset('resources/images/logo.webp') }}" alt="Logo Tari Baris Telek" class="object-contain w-12 h-12" />
         </a>
       </div>
     </div>
@@ -68,7 +68,7 @@
           <ul class="flex items-center justify-center space-x-10 text-md"> <!-- Tambahkan items-center di sini -->
             <li class="flex items-center h-8"> <!-- Tambahkan class height dan flex -->
               <a href="/login" class="flex items-center h-full">
-                <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo Desa Sanur" 
+                <img src="{{ Vite::asset('resources/images/logo.webp') }}" alt="Logo Desa Sanur" 
                      class="transition-transform duration-300 h-9 hover:scale-110" />
               </a>
             </li>

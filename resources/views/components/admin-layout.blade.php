@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="{{ Vite::asset('resources/images/logo.png') }}" type="image/png" />
+  <link rel="icon" href="{{ Vite::asset('resources/images/logo.webp') }}" type="image/webp" />
   <title>Tari Baris Gede Télék</title>
 
   @vite(['resources/css/app.css','resources/js/app.js'])
@@ -24,7 +24,7 @@
       <div class="flex items-center justify-between p-3 border-b border-gray-500">
         <div class="flex items-center gap-x-4">
           <img 
-            src="{{ Vite::asset('resources/images/logo.png') }}" 
+            src="{{ Vite::asset('resources/images/logo.webp') }}" 
             class="w-12"
             alt="Logo"
           >
@@ -99,7 +99,7 @@
 
         <div class="flex items-center gap-4 pb-4 mb-4 border-b border-gray-500">
           <img 
-            src="{{ Vite::asset('resources/images/logo.png') }}" 
+            src="{{ Vite::asset('resources/images/logo.webp') }}" 
             class="w-20"
             alt="Logo"
           >

@@ -20,7 +20,9 @@
     </div>
 
     <div class="flex flex-col items-center justify-center mt-8 ml-0  {{ $index === 1 ? 'md:mr-10 lg:items-end' : 'md:ml-10 lg:items-start' }} md:w-1/2 md:mt-0">
-        <h1 class="text-4xl font-bold text-center text-transparent transition-colors duration-300 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">{{ $data->judul }}</h1>
+        <h1 class="self-center text-4xl font-bold text-center text-transparent transition-colors duration-300 md:text-3xl lg:text-5xl bg-clip-text from-emas bg-gradient-to-r to-white">
+            {{ $data->judul }}
+        </h1>        
         <p class="mt-6 text-lg leading-relaxed text-justify md:text-base lg:text-lg">
             {{ $data->deskripsi }}
         </p>
