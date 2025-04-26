@@ -18,7 +18,7 @@
                 data-aos-delay="300"
             >
                 <img 
-                    src="images/penari2.png" 
+                    src="/images/penari2.png" 
                     alt="Penari" 
                     class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                     filter brightness-95 group-hover:brightness-100 
@@ -81,7 +81,7 @@
                 data-aos-delay="300"
             >
                 <img 
-                    src="images/petelek2.png" 
+                    src="/images/petelek2.png" 
                     alt="Petelek" 
                     class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                         filter brightness-95 group-hover:brightness-100 

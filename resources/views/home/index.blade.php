@@ -63,7 +63,7 @@
                 <a href="/busana" target="_blank">
                     <div class="relative block w-full max-w-xs overflow-hidden transition-all duration-300 border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                         <img 
-                            src="images/penari.png" 
+                            src="/images/penari.png" 
                             alt="Penari" 
                             class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                             filter brightness-95 group-hover:brightness-100 
@@ -81,7 +81,7 @@
                 <a href="/busana" target="_blank ">
                     <div class="relative block w-full max-w-xs overflow-hidden transition-all duration-300 border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                         <img 
-                            src="images/petelek.png" 
+                            src="/images/petelek.png" 
                             alt="Petelek" 
                             class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                                 filter brightness-95 group-hover:brightness-100 
