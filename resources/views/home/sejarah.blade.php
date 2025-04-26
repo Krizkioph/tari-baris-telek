@@ -4,7 +4,7 @@
     <!-- Section 1 -->
     <div class="flex flex-col items-center px-4 mx-auto mb-12 md:flex-row max-w-7xl md:px-4 lg:px-6 md:mb-16">
         <img 
-            src="{{ Vite::asset('resources/images/telek.webp') }}" 
+            src="images/telek.webp" 
             alt="Tari Baris" 
             class="object-cover w-full h-48 p-1 mb-4 transition-all duration-300 border border-transparent md:w-1/2 md:h-64 lg:h-96 md:mb-0 md:mr-5 rounded-xl hover:border-emas hover:-translate-y-1"
         >
@@ -19,7 +19,7 @@
     <div class="flex flex-col items-center px-4 mx-auto mb-28 md:flex-row max-w-7xl md:px-4 lg:px-6 md:mb-32">
         <div class="w-full md:w-1/2 md:order-2">
             <img 
-                src="{{ Vite::asset('resources/images/tari-telek.webp') }}" 
+                src="images/tari-telek.webp" 
                 alt=" Tari Baris Gede Télék" 
                 class="object-cover w-full h-48 p-1 mb-4 transition-all duration-300 border border-transparent hover:border-emas md:w-full md:h-64 lg:h-96 md:mb-0 md:ml-5 rounded-xl hover:-translate-y-1"
             >
