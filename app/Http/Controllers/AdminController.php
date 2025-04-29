@@ -47,7 +47,7 @@ class AdminController extends Controller
         ]);
 
         // Update nama admin
-        $admin = Admin::find(Auth::id());
+        $admin = Admin::findOrFail(Auth::id());
         $admin->name = $request->name;
         $admin->save();
 
@@ -84,8 +84,13 @@ class AdminController extends Controller
             return redirect()->back();
         }
 
+        if ($request->password_lama == $request->password_baru) {
+            toastr()->error('Password baru tidak boleh sama dengan password lama.');
+            return redirect()->back();
+        }
+
         // Update password
-        $admin = Admin::find(Auth::id());
+        $admin = Admin::findOrFail(Auth::id());
         $admin->password = bcrypt($request->password_baru);
         $admin->save();
 
@@ -156,7 +161,7 @@ class AdminController extends Controller
     public function edit_informasi($id)
     {
         return view('admin.edit-informasi', [
-            'data' => Information::find($id)
+            'data' => Information::findOrFail($id)
         ]);
     }
 
@@ -208,7 +213,6 @@ class AdminController extends Controller
     public function delete_informasi($id)
     {
         $data = Information::find($id);
-
         if (!$data) {
             toastr()->error('Informasi tidak ditemukan.');
             return redirect()->back();
@@ -259,7 +263,7 @@ class AdminController extends Controller
 
 
         // Simpan data ke database
-        $data = new galeri();
+        $data = new Galeri();
         $data->deskripsi = $request->deskripsi;
         $data->admin_id = Auth::id();
 
@@ -283,7 +287,7 @@ class AdminController extends Controller
     {
 
         return view('admin.edit-galeri', [
-            'data' => Galeri::find($id)
+            'data' => Galeri::findOrFail($id)
         ]);
     }
 
@@ -431,7 +435,7 @@ class AdminController extends Controller
     public function edit_gerakan($id)
     {
         return view('admin.edit-gerakan', [
-            'data' => Gerakan::find($id)
+            'data' => Gerakan::findOrFail($id)
         ]);
     }
 
@@ -463,6 +467,11 @@ class AdminController extends Controller
 
         // Simpan data ke database
         $data = Gerakan::find($id);
+        if (!$data) {
+            toastr()->error('Gerakan tidak ditemukan.');
+            return redirect()->back();
+        }
+
         $data->judul = $request->judul;
         $data->deskripsi = $request->deskripsi;
         $data->link = $embedLink;

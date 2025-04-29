@@ -43,7 +43,7 @@
             <x-garis-pinggir/>
             
             <p class="leading-relaxed text-center text-md md:text-base lg:text-lg md:leading-loose">
-                Makna Tari Baris Gede Télék yaitu sebagai pengantar atau pemendakan Ida Bhatara untuk medal atau keluar dari Griya Jero Gede Sanur menuju Pura Dalem Kedewatan sebagai lokasi pelaksanaan piodalan Tilem Kajeng. Jadi, jika Tari Baris Gede Télék tidak dipentaskan, dianggap Ida Bhatara/Bhatari tidak tedun.
+                Makna Tari Baris Gede Télék yaitu sebagai pengantar dan pemendakan Ida Bhatara untuk medal atau keluar dari Griya Jero Gede Sanur menuju Pura Dalem Kedewatan sebagai lokasi pelaksanaan piodalan Tilem Kajeng. Jadi, jika Tari Baris Gede Télék tidak dipentaskan, dianggap Ida Bhatara/Bhatari tidak tedun.
             </p>
         </div>
     </div>
