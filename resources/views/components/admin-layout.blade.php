@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/images/logo.webp" type="image/webp">
+  <link rel="icon" href="/images/swastika.png" type="image/webp">
   <title>Tari Baris Gede Télék</title>
 
   @vite(['resources/css/app.css','resources/js/app.js'])
@@ -24,7 +24,7 @@
       <div class="flex items-center justify-between p-3 border-b border-gray-500">
         <div class="flex items-center gap-x-4">
           <img 
-            src="/images/logo.webp" 
+            src="/images/swastika.png" 
             class="w-12"
             alt="Logo"
           >
@@ -97,16 +97,25 @@
     <aside class="flex-col hidden w-64 min-h-screen bg-gray-600 md:flex">
       <nav class="flex flex-col flex-grow p-4 space-y-2">
 
-        <div class="flex items-center gap-4 pb-4 mb-4 border-b border-gray-500">
-          <img 
-            src="/images/logo.webp" 
-            class="w-20"
-            alt="Logo"
-          >
-          <div>
-            <p class="text-2xl font-bold text-transparent bg-clip-text from-emas bg-gradient-to-r to-white">TBGT</p>
+        <div class="flex flex-col items-center gap-2 pb-4 mb-4 border-b border-gray-500">
+          <div class="flex flex-col items-center gap-1">
+            <div class="flex items-center gap-4">
+              <img 
+                src="/images/swastika.png" 
+                class="w-20"
+                alt="Logo"
+              >
+              <p class="text-2xl font-bold text-transparent bg-clip-text from-emas bg-gradient-to-r to-white">
+                TBGT
+              </p>
+            </div>
+            <p class="font-bold text-transparent bg-clip-text from-emas bg-gradient-to-r to-white text-md">
+              Tari Baris Gede Télék
+            </p>
           </div>
         </div>
+        
+        
     
         <a href="/dashboard" class="block p-2 text-left bg-gray-500 rounded hover:bg-gray-400 hover:text-emas">Dashboard</a>
         <div class="relative">
