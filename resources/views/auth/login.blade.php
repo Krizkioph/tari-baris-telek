@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/swastika.png" type="image/webp">
     <title>Tari Baris Telek</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 
@@ -14,18 +15,19 @@
 
     
     <main class="mt-20 max-w-[986px] mx-auto">
-        <x-page-heading>Login</x-page-heading>
-        <div class="">
-            <x-forms.form method="POST" action="/login" enctype="multipart/form-data">
-    
-                <x-forms.input name="email" label="Email" type="email" />
-                <x-forms.input name="password" label="Password" type="password" />
-            
-                <x-forms.button>Login In</x-forms.button>
-            </x-forms.form>
-        </div>
+        <div class="p-4 md:p-0"> <!-- Ganti dari p-10 menjadi p-4 md:p-0 -->
+            <x-page-heading>Login</x-page-heading>
+            <div class="px-4 md:px-0"> <!-- Tambahkan padding horizontal di sini -->
+                <x-forms.form method="POST" action="/login" enctype="multipart/form-data">
         
-
+                    <x-forms.input name="email" label="Email" type="email" />
+                    <x-forms.input name="password" label="Password" type="password" />
+                
+                    <x-forms.button>Login In</x-forms.button>
+                </x-forms.form>
+            </div>
+        </div>
     </main>
+    
 </body>
 </html>

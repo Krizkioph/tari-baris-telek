@@ -27,9 +27,9 @@
         </svg>
       </button>
 
-      <div class="flex items-center">
+      <div class="flex items-center justify-center w-12 h-12">
         <a href="/login">
-          <img src="/images/swastika.png" alt="Logo Tari Baris Telek" class="object-contain w-12 h-12" />
+          <img src="/images/swastika.png" alt="Logo" class="object-contain w-full h-full border border-white" />
         </a>
       </div>
     </div>
@@ -99,7 +99,7 @@
     </nav>
   </div>
 
-  <main class="mt-8 md:mt-12 max-w-[986px] mx-auto  flex-grow">
+  <main class="mt-8 md:mt-12 max-w-[986px] mx-auto flex-grow px-4 sm:px-6">
     {{ $slot }}
   </main>
 
