@@ -29,7 +29,7 @@
 
       <div class="flex items-center justify-center w-12 h-12">
         <a href="/login">
-          <img src="/images/swastika.png" alt="Logo" class="object-contain w-full h-full border border-white" />
+          <img src="/images/swastika.png" alt="Logo" class="object-contain w-full h-full" />
         </a>
       </div>
     </div>
