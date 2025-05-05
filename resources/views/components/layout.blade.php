@@ -50,12 +50,12 @@
         <nav class="p-4">
           <ul class="space-y-8 text-lg">
             <li><a href="/" class="block hover:text-emas {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a></li>
-            <li><a href="{{ route('sejarah') }}" class="block hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
-            <li><a href="{{ route('busana') }}" class="block hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>
-            <li><a href="{{ route('gerakan') }}" class="block hover:text-emas {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a></li>
-            <li><a href="{{ route('galeri')}}" class="block hover:text-emas {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a></li>
-            <li><a href="{{ route('tentang') }}" class="block hover:text-emas {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a></li>
-            <li><a href="{{ route(name: 'lokasi') }}" class="block hover:text-emas {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a></li>
+            <li><a href="/sejarah" class="block hover:text-emas {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a></li>
+            <li><a href="/busana" class="block hover:text-emas {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a></li>
+            <li><a href="/gerakan" class="block hover:text-emas {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a></li>
+            <li><a href="/galeri" class="block hover:text-emas {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a></li>
+            <li><a href="/tentang" class="block hover:text-emas {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a></li>
+            <li><a href="/lokasi" class="block hover:text-emas {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a></li>
           </ul>
         </nav>
       </div>
@@ -76,22 +76,22 @@
               <a href="/" class="hover:text-emas h-full flex items-center {{ request()->routeIs('home') ? 'text-emas font-bold' : '' }}">Beranda</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route(name: 'sejarah') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a>
+              <a href="/sejarah" class="hover:text-emas h-full flex items-center {{ request()->routeIs('sejarah') ? 'text-emas font-bold' : '' }}">Sejarah</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route('busana') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a>
+              <a href="/busana" class="hover:text-emas h-full flex items-center {{ request()->routeIs('busana') ? 'text-emas font-bold' : '' }}">Busana</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route(name: 'gerakan') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a>
+              <a href="/gerakan" class="hover:text-emas h-full flex items-center {{ request()->routeIs('gerakan') ? 'text-emas font-bold' : '' }}">Gerakan</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route('galeri') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a>
+              <a href="/galeri" class="hover:text-emas h-full flex items-center {{ request()->routeIs('galeri') ? 'text-emas font-bold' : '' }}">Galeri</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route('tentang') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a>
+              <a href="/tentang" class="hover:text-emas h-full flex items-center {{ request()->routeIs(patterns: 'tentang') ? 'text-emas font-bold' : '' }}">Tentang</a>
             </li>
             <li class="flex items-center h-9">
-              <a href="{{ route('lokasi') }}" class="hover:text-emas h-full flex items-center {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a>
+              <a href="/lokasi" class="hover:text-emas h-full flex items-center {{ request()->routeIs('lokasi') ? 'text-emas font-bold' : '' }}">Lokasi</a>
             </li>
           </ul>
         </div>
