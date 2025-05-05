@@ -65,7 +65,7 @@ class HomeController extends Controller
     public function show_galeri($id)
     {
         return view('home.show-galeri', [
-            'galeri' => Galeri::findOrFail($id),
+            'foto' => Galeri::findOrFail($id),
         ]);
     }
 }

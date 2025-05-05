@@ -128,13 +128,13 @@ class AdminController extends Controller
         $request->validate([
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:20480',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
             'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
-            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 20MB.',
         ]);
 
         // Simpan data ke database
@@ -171,13 +171,13 @@ class AdminController extends Controller
         $request->validate([
             'judul' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:4048',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:20480',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
             'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
-            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 20MB.',
         ]);
 
         // Simpan data ke database
@@ -253,12 +253,12 @@ class AdminController extends Controller
         // Validasi input
         $request->validate([
             'deskripsi' => 'required|string',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:4048',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,webp|max:20480',
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
             'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
-            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 20MB.',
         ]);
 
 
@@ -296,12 +296,12 @@ class AdminController extends Controller
         // Validasi input
         $request->validate([
             'deskripsi' => 'required|string',
-            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:4048',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:20480',
         ], [
             'deskripsi.required' => 'Deskripsi wajib diisi.',
             'foto.image' => 'File harus berupa gambar.',
             'foto.mimes' => 'Format gambar yang diperbolehkan: jpeg, png, jpg, webp.',
-            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 4MB.',
+            'foto.max' => 'Ukuran gambar tidak boleh lebih dari 20MB.',
         ]);
 
         // Simpan data ke database

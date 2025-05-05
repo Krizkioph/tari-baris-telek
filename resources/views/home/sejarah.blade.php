@@ -10,7 +10,7 @@
         >
         <div class="w-full md:w-1/2">
             <p class="text-justify text-md indent-5 md:indent-10 md:text-base lg:text-lg">
-                Di telisik secara historis, keberadaan Tari Baris Gede Télék berhubungan secara langsung dengan cikal bakal pura dalem kedewatan di sanur. Tari Baris Gede télék muncul saat perpindahan Pura Dalem Kedewatan dari Pradesa Wirasana Tangtu Padanggalak menuju Tegal Asah (Sekarang dikenal sebagai Sanur). Ketika perpindahan itu, seluruh kawula atau braya ikut serta mengiringi dengan membawa bahan-bahan pura berupa sesaka dan pratima iringan-iringan para braya ini disertai dengan ekspresi kegembiraan yang memuncak, keriangan hati yang tiada tara.Bahkan mereka saling melempar-lempar sesaka yang digopohnya, sampai memunculkan gerak ritmis dan hentakan-hentakan kaki menyentuk tahan. 
+                Ditelisik secara historis, keberadaan Tari Baris Gede Télék berhubungan secara langsung dengan cikal bakal pura dalem kedewatan di sanur. Tari Baris Gede télék muncul saat perpindahan Pura Dalem Kedewatan dari Pradesa Wirasana Tangtu Padanggalak menuju Tegal Asah (Sekarang dikenal sebagai Sanur). Ketika perpindahan itu, seluruh kawula atau braya ikut serta mengiringi dengan membawa bahan-bahan pura berupa sesaka dan pratima, iringan-iringan para braya ini disertai dengan ekspresi kegembiraan yang memuncak, keriangan hati yang tiada tara. Bahkan mereka saling melempar-lempar sesaka yang digopohnya, sampai memunculkan gerak ritmis dan hentakan-hentakan kaki menyentuk tanah. 
             </p>
         </div>
     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="w-full md:w-1/2 md:order-1 md:pr-5">
             <p class="text-justify text-md indent-5 md:indent-10 md:text-base lg:text-lg">
-                Tanpa disadari, ternyata ada beberapa pengiring yang mengalami trance atau Kerahuan. Saat itu berdenyar-denyarlah pawisik atau sabda yang meminta kepada para braya, kawula dan pengiring bahwa ketika ida bhatara di Pura Dalem Kedewatan tedun atau turun kedunia, maka mesti diiringi dengan Tarian Baris Gede Télék  atau Tarian I Kebo Dengkol. Oleh karena kemunculan pawisik itu. sampai saat ini, manakala wakti Tilem bertemu Kajeng, maka pada titik pertemua itu, Ida Bhatara/bhatari di Pura Dalem Kedewatan akan tedun dan masyarakat Desa Sanur bersiap Mementaskan Tarian Baris Gede Télék.
+                Tanpa disadari, ternyata ada beberapa pengiring yang mengalami trance atau Kerahuan. Saat itu berdenyar-denyarlah pawisik atau sabda yang meminta kepada para braya, kawula dan pengiring bahwa ketika ida bhatara di Pura Dalem Kedewatan tedun atau turun kedunia, maka mesti diiringi dengan Tarian Baris Gede Télék. Oleh karena kemunculan pawisik itu. sampai saat ini, manakala wakti Tilem bertemu Kajeng, maka pada titik pertemua itu, Ida Bhatara/bhatari di Pura Dalem Kedewatan akan tedun dan masyarakat banjar belong di Desa Adat Sanur bersiap Mementaskan Tarian Baris Gede Télék.
             </p>
         </div>
     </div>

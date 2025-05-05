@@ -15,7 +15,7 @@ Route::get('/tentang', [HomeController::class, 'tentang'])->name('tentang');
 Route::get('lokasi', [HomeController::class, 'lokasi'])->name('lokasi');
 
 Route::get('/informasi/{id}', [HomeController::class, 'show_informasi'])->name('informasi');
-Route::get('/galeri/{id}', [HomeController::class, 'show_galeri'])->name('galeri');
+Route::get('/foto/{id}', [HomeController::class, 'show_galeri'])->name('foto');
 
 
 // Admin

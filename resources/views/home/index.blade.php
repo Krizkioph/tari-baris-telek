@@ -6,7 +6,7 @@
         data-aos-offset="200"
         data-aos-delay="100">
             <iframe 
-                src="https://www.youtube.com/embed/RHpWqcZ_wz0?si=b74R5E0LjRVdP2HS" 
+                src="https://www.youtube.com/embed/X-KjEaBbhnY?si=7k9oHv2rZyqTRdZv" 
                 class="w-full h-full rounded-xl"
                 title="YouTube video player" 
                 frameborder="0" 
@@ -22,7 +22,7 @@
              data-aos-offset="200">
             <h1 class="mt-4 text-3xl font-bold text-center text-transparent sm:mt-0 md:text-3xl lg:text-4xl bg-clip-text from-emas bg-gradient-to-r to-white">Tari Baris Gede Télék</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
-                Tari Baris Gede Télék sebagai tarian sakral yang wajib dipentaskan ketika upacara piodalan Tilem Kajeng di Pura Dalem Kadewatan, disebut juga dengan tarian I Kebo Dengkol, yang merupakan identitas religius masyarakat Desa Adat Sanur dalam penganut agama Hindu (Siwaistik).
+                Baris Gede Télék digelar di Pura Dalem Kadewatan Sanur pada piodalannya yg disebut Tilem Kajeng den pada odalan di Pura Surya Banjar Belong, Desa Adat Sanur. 
             </p>
         </div>
     </div>
@@ -63,7 +63,7 @@
                 <a href="/busana" target="_blank">
                     <div class="relative block w-full max-w-xs overflow-hidden transition-all duration-300 border rounded-lg group md:w-64 lg:w-72 lg:mt-8 bg-white/5 border-white/15 hover:border-emas">
                         <img 
-                            src="/images/penari.png" 
+                            src="/images/Penari.png" 
                             alt="Penari" 
                             class="w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] transform rounded-lg shadow-md 
                             filter brightness-95 group-hover:brightness-100 
@@ -104,7 +104,7 @@
             <div class="grid w-full max-w-6xl grid-cols-1 gap-4 px-4 mt-6 mb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Gambar-gambar -->
                 @foreach ($galeri as $data)
-                    <a href="/galeri/{{$data->id}}" class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas"
+                    <a href="/foto/{{$data->id}}" class="relative block overflow-hidden border border-transparent rounded-lg duration-400 group hover:border-emas"
                        data-aos="zoom-in"
                        data-aos-duration="600"
                        data-aos-delay="{{ $loop->index * 100 }}">
@@ -126,7 +126,7 @@
     
             <!-- Pagination -->
             <div class="flex justify-center mt-6 col-span-full md:mt-8">
-                <x-button-standar href="/galeri">More</x-button-standar>
+                <x-button-standar href="{{ route('galeri') }}">More</x-button-standar>
             </div>
         </div>
     </div>
