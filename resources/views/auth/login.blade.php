@@ -24,6 +24,7 @@
                     <x-forms.input name="password" label="Password" type="password" />
                 
                     <x-forms.button>Login In</x-forms.button>
+                    <a href="/" class="inline-block px-6 py-2 ml-4 font-semibold transition duration-300 border-2 rounded shadow-md border-white/15 bg-white/5 hover:text-emas hover:border-emas hover:bg-white/10">Kembali</a>
                 </x-forms.form>
             </div>
         </div>
