@@ -11,7 +11,7 @@
 
         <div class="absolute inset-0 z-10 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/40 to-transparent group-hover:opacity-100"></div>
         <img 
-            src="{{asset('galeri/'. $foto->foto)}}" 
+            src="{{asset('photo/'. $foto->foto)}}" 
             alt="{{$foto->deskripsi}}" 
             class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] object-contain transform group-hover:scale-105 transition-transform duration-500"
         >

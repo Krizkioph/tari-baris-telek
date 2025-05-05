@@ -22,7 +22,7 @@
                             </td>
                             <td class="px-6 py-4">{{ $info->created_at->diffForHumans() }}</td>
                             <td class="px-6 py-4">
-                                <img src="{{ asset('galeri/' . $info->foto) }}" 
+                                <img src="{{ asset('photo/' . $info->foto) }}" 
                                      alt="{{ $info->judul }}" 
                                      class="object-cover w-56 border border-gray-700 rounded-lg shadow-md h-36">
                             </td>

@@ -109,7 +109,7 @@
                        data-aos-duration="600"
                        data-aos-delay="{{ $loop->index * 100 }}">
                         <img 
-                            src="{{ asset('galeri/' . $data->foto) }}" 
+                            src="{{ asset('photo/' . $data->foto) }}" 
                             alt="{{ $data->deskripsi }}" 
                             width="300" 
                             height="300" 

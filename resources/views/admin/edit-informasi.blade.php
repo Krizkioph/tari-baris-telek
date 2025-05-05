@@ -11,7 +11,7 @@
                 <x-forms.textarea name="deskripsi" label="Deskripsi" value="{{ $data->deskripsi }}" required />
                 <x-forms.error name="deskripsi" />
                 <div class="p-4 border rounded-lg shadow-lg bg-white/10 border-white/10">
-                    <img src="{{ asset('galeri/' . $data->foto) }}" 
+                    <img src="{{ asset('photo/' . $data->foto) }}" 
                     alt="{{ $data->deskripsi }}" 
                     class="object-cover w-48 h-48 border border-gray-700 rounded-lg shadow-md">
                 </div>

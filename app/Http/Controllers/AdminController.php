@@ -147,7 +147,7 @@ class AdminController extends Controller
         if ($request->hasFile('foto')) {
             $foto = $request->file('foto');
             $namaFoto = time() . '.' . $foto->getClientOriginalExtension();
-            $foto->move(public_path('galeri'), $namaFoto);
+            $foto->move(public_path('photo'), $namaFoto);
             $data->foto = $namaFoto;
         }
 
@@ -193,13 +193,13 @@ class AdminController extends Controller
         // Handle file upload
         if ($request->hasFile('foto')) {
             // Hapus foto lama jika ada
-            if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
-                unlink(public_path('galeri/' . $data->foto));
+            if ($data->foto && file_exists(public_path('photo/' . $data->foto))) {
+                unlink(public_path('photo/' . $data->foto));
             }
 
             $foto = $request->file('foto');
             $namaFoto = time() . '.' . $foto->getClientOriginalExtension();
-            $foto->move(public_path('galeri'), $namaFoto);
+            $foto->move(public_path('photo'), $namaFoto);
             $data->foto = $namaFoto;
         }
 
@@ -219,8 +219,8 @@ class AdminController extends Controller
         }
 
         // Hapus foto
-        if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
-            unlink(public_path('galeri/' . $data->foto));
+        if ($data->foto && file_exists(public_path('photo/' . $data->foto))) {
+            unlink(public_path('photo/' . $data->foto));
         }
 
         $data->delete();
@@ -271,7 +271,7 @@ class AdminController extends Controller
         if ($request->hasFile('foto')) {
             $foto = $request->file('foto');
             $namaFoto = time() . '.' . $foto->getClientOriginalExtension();
-            $foto->move(public_path('galeri'), $namaFoto);
+            $foto->move(public_path('photo'), $namaFoto);
             $data->foto = $namaFoto;
         }
 
@@ -316,13 +316,13 @@ class AdminController extends Controller
         // Handle file upload
         if ($request->hasFile('foto')) {
             // Hapus foto lama jika ada
-            if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
-                unlink(public_path('galeri/' . $data->foto));
+            if ($data->foto && file_exists(public_path('photo/' . $data->foto))) {
+                unlink(public_path('photo/' . $data->foto));
             }
 
             $foto = $request->file('foto');
             $namaFoto = time() . '.' . $foto->getClientOriginalExtension();
-            $foto->move(public_path('galeri'), $namaFoto);
+            $foto->move(public_path('photo'), $namaFoto);
             $data->foto = $namaFoto;
         }
 
@@ -342,8 +342,8 @@ class AdminController extends Controller
         }
 
         // Hapus foto
-        if ($data->foto && file_exists(public_path('galeri/' . $data->foto))) {
-            unlink(public_path('galeri/' . $data->foto));
+        if ($data->foto && file_exists(public_path('photo/' . $data->foto))) {
+            unlink(public_path('photo/' . $data->foto));
         }
 
         $data->delete();

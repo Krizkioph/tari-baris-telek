@@ -20,7 +20,7 @@
                             <td class="px-6 py-4">{{ $data->admin->name }}</td>
                             <td class="px-6 py-4">{{ $data->created_at->diffForHumans() }}</td>
                             <td class="px-6 py-4">
-                                <img src="{{ asset('galeri/' . $data->foto) }}" 
+                                <img src="{{ asset('photo/' . $data->foto) }}" 
                                      alt="{{ $data->deskripsi }}" 
                                      class="object-cover w-56 border border-gray-700 rounded-lg shadow-md h-36">
                             </td>

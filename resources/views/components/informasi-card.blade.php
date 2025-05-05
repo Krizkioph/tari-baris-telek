@@ -10,7 +10,7 @@
         
         <div class="relative overflow-hidden border rounded-md aspect-square border-white/15">
             <img 
-            src="{{asset('galeri/' . $data->foto)}}" 
+            src="{{asset('photo/' . $data->foto)}}" 
             alt="{{$data->judul}}" 
             class="object-cover w-full h-full transition-all duration-300 transform border border-white/15" 
             />
