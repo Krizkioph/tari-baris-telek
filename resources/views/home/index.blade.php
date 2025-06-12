@@ -6,7 +6,7 @@
         data-aos-offset="200"
         data-aos-delay="100">
             <iframe 
-                src="https://www.youtube.com/embed/X-KjEaBbhnY?si=7k9oHv2rZyqTRdZv" 
+                src="https://www.youtube.com/embed/eeZ9PUdSG1Q?si=ogLnxZUK9sZ7tkvY" 
                 class="w-full h-full rounded-xl"
                 title="YouTube video player" 
                 frameborder="0" 
@@ -22,7 +22,7 @@
              data-aos-offset="200">
             <h1 class="mt-4 text-3xl font-bold text-center text-transparent sm:mt-0 md:text-3xl lg:text-4xl bg-clip-text from-emas bg-gradient-to-r to-white">Tari Baris Gede Télék</h1>
             <p class="mt-4 leading-relaxed text-justify text-md md:text-base lg:text-lg">
-                Baris Gede Télék digelar di Pura Dalem Kadewatan Sanur pada piodalannya yg disebut Tilem Kajeng den pada odalan di Pura Surya Banjar Belong, Desa Adat Sanur. 
+                Baris Gede Télék digelar di Pura Dalem Kedewatan Sanur pada piodalannya yg disebut Tilem Kajeng.
             </p>
         </div>
     </div>
